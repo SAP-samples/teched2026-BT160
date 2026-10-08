@@ -4,6 +4,8 @@
 
 ## Overview
 
+The CIO's message is clear: the Board needs the report before their meeting. You have 25 minutes.
+
 This is the heart of the workshop. You will have the EA Assistant evaluate MaMa-CRM against the **Application Review — Top 20 Criteria**, drawing evidence from two authorized sources — the structured LeanIX inventory and the indexed arc42 architecture documentation — and produce an evidence table, a summary, and a gap register.
 
 **Duration:** 25 minutes

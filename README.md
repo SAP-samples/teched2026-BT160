@@ -33,9 +33,9 @@ Two capabilities are central to this workshop:
 
 It is also the system nobody fully owns anymore. The team that built it has shrunk, the documentation has drifted, and the architecture decisions behind it live in people's heads — not on paper.
 
-Last quarter, InDAC's architecture group published a new **Application Review — Top 20 Criteria** standard. This quarter, the **Board of Directors** has lost confidence in the group running MaMa-CRM and wants it reviewed against that standard — with evidence — before deciding whether to **keep, re-platform, or retire** it.
+Last quarter, **you** — John, senior enterprise architect at InDAC — presented the new **Application Review — Top 20 Criteria** standard to the architecture group. This quarter, the **Board of Directors** has lost confidence in the group running MaMa-CRM and wants it reviewed against that standard — with evidence — before deciding whether to **keep, re-platform, or retire** it. Jack, the CIO, just put it on your desk.
 
-> You are an enterprise architect at InDAC. The review landed on your desk this morning. You have the LeanIX workspace, the MaMa-CRM fact sheet, its arc42 architecture documentation, and the review criteria. What you *don't* have yet is a written architecture decision capturing the standard — so that is where you start. By the end of the session you will hand the Board a defensible verdict.
+> You have the LeanIX workspace, the MaMa-CRM fact sheet, its arc42 architecture documentation, and the review criteria. What you *don't* have yet is a written architecture decision capturing the standard — so that is where you start. By the end of the session you will hand the Board a defensible verdict.
 
 ## What You Will Learn
 
