@@ -20,7 +20,7 @@ Two capabilities drive this workshop:
 | System | Purpose |
 |--------|---------|
 | SAP LeanIX (your own workspace) | Where the review takes place — inventory, EA Assistant, and architecture decisions all live here. You are the admin of your own workspace. |
-| Claude Code in VS Code | Connect to your LeanIX workspace via the MCP server and create a governed architecture decision in Exercise 1 |
+| Claude Code (VS Code extension or terminal) | Connect to your LeanIX workspace via the MCP server and create a governed architecture decision in Exercise 1 |
 
 ## Step 1 — Prepare Your Laptop
 
@@ -34,38 +34,66 @@ Your session laptop needs a one-time setup so Claude Code can reach the internet
 
 > **Why this matters:** Without the proxy setup, Claude Code cannot authenticate or reach the LeanIX MCP server. If `LMU_BT160` does not appear or the setup fails, raise your hand before continuing.
 
-## Step 2 — Open Claude Code in VS Code and Connect to LeanIX
+## Step 2 — Open Claude Code and Connect to LeanIX
 
-**Visual Studio Code** is pre-installed on your session laptop with the **Claude Code extension**. Exercises 1 and 2 use Claude Code to talk to your LeanIX workspace through the MCP server — you set that connection up here, once.
+Exercises 1 and 2 use Claude Code to talk to your LeanIX workspace through the MCP server. You set that connection up here, once.
 
-### Open Claude Code in VS Code
+**You can use Claude Code in whichever way you prefer:**
+- **VS Code extension** (recommended for most participants): Visual Studio Code is pre-installed on your session laptop with the Claude Code extension. Authentication uses a browser OAuth flow — no tokens to manage.
+- **Terminal / CLI**: If you prefer working in the terminal, Claude Code is also available as a command-line tool. Authentication uses a technical-user API token from your LeanIX workspace.
+
+Both give identical workspace access. Choose whichever feels more natural to you.
+
+> **We will walk through the MCP server setup steps live at the start of the session.** The instructions below are your reference — follow along as the facilitator demonstrates.
+
+### Option A — VS Code Extension (browser OAuth)
+
+#### Open Claude Code in VS Code
 
 1. Open **Visual Studio Code** from the Start menu or taskbar.
 2. Click the **Claude Code** icon in the Activity Bar on the left side.
 3. Sign in when prompted — your session card has the credentials.
 
-### Connect to the LeanIX MCP Server
+![Screenshot: Claude Code icon in the VS Code Activity Bar and the Claude Code panel open](images/ex0_claude_code_vscode_panel.png)
 
-The LeanIX MCP server exposes your workspace — fact sheets, architecture decisions, inventory — as tools Claude Code can call. Connect it through the VS Code interface:
+#### Connect to the LeanIX MCP Server
 
 1. In the Claude Code panel, open the **MCP Servers** section (plug icon, or via the settings gear → MCP Servers).
 2. Click **Add MCP Server**.
+
+![Screenshot: MCP Servers section in Claude Code with the Add MCP Server button](images/ex0_mcp_add_server.png)
+
 3. Enter the LeanIX MCP server URL from your session card:
    ```
    https://<workspace-subdomain>.leanix.net/services/mcp-server/v1/mcp
    ```
 4. When asked for authentication, choose **OAuth / browser login**.
 5. A browser window opens — sign in to your LeanIX workspace.
+
+![Screenshot: LeanIX OAuth login in the browser](images/ex0_leanix_oauth.png)
+
 6. Return to VS Code. The `leanix` server should show as **Connected**.
 
-> **Verify it works:** In the Claude Code chat, ask: *"Using the LeanIX MCP server, list the architecture decision templates available in this workspace."* You should see at least one template. If you get an error, check the URL on your session card.
+![Screenshot: LeanIX MCP server showing Connected status in Claude Code](images/ex0_mcp_connected.png)
 
-> **Prefer the terminal?** You can connect via CLI instead, using a technical-user API token. Create a Technical User under **Administration → Technical Users**, copy the token, then run:
-> ```bash
-> claude mcp add --transport http leanix <MCP-URL> \
->   --header "Authorization: Token <API-TOKEN>"
-> ```
-> Both approaches give you identical workspace access. Note: the header value is `Token <API-TOKEN>`, not `Bearer`.
+### Option B — Terminal (API token)
+
+Create a Technical User under **Administration → Technical Users**, copy the token, then run:
+
+```bash
+claude mcp add --transport http leanix <MCP-URL> \
+  --header "Authorization: Token <API-TOKEN>"
+```
+
+Note: the header value is `Token <API-TOKEN>`, not `Bearer`.
+
+### Verify the connection works
+
+In the Claude Code chat, ask:
+
+> *"Using the LeanIX MCP server, list the architecture decision templates available in this workspace."*
+
+You should see at least one template. If you get an error, check the URL on your session card.
 
 ## Step 3 — Log In to Your SAP LeanIX Workspace
 

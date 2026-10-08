@@ -29,6 +29,8 @@ Two capabilities are central to this workshop:
 
 ## Business Scenario
 
+![URGENT: Review of MaMa CRM — email from the CIO](images/mama-crm-urgent-review-email.png)
+
 **InDAC** is a mid-sized data center that runs business-process outsourcing for mass-market clients — insurance, telecommunications, energy, and credit-card providers. Its flagship platform, **MaMa-CRM**, was built in-house to absorb a new client (a "mandator") or campaign *without changing code*. Seven to ten developers, built on Java, Oracle, and the Drools rule engine, it has grown over the years into the system the whole business runs on.
 
 It is also the system nobody fully owns anymore. The team that built it has shrunk, the documentation has drifted, and the architecture decisions behind it live in people's heads — not on paper.
