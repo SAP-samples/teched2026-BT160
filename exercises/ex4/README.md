@@ -30,6 +30,8 @@ If the leaning is toward re-platform or retire, the Board will ask "replace it w
 
 Governance reviews increasingly have to answer a compliance question up front: does this application fall under the EU AI Act, and if so, at what risk level?
 
+> **About the EU AI Act extension:** The EU AI Act classification capability is an optional extension for SAP LeanIX. It must be activated under **Administration → Optional Features and Early Access** before use. In this workshop your workspace already has it enabled. If you want to use this in your own workspace after the session, see [EU AI Act Classification in the EA Assistant](https://help.sap.com/docs/LEANIX/72d375467c1e4dcb872dfa2998b6328d/d4ca4b50141d4cdfb0122915e2b91f25.html) for setup instructions.
+
 ### Step 3 — Classify MaMa-CRM
 
 In the EA Assistant, ask:

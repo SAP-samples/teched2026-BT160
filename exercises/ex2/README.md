@@ -2,7 +2,7 @@
 
 ## Overview
 
-You have created the review standard. Before you judge MaMa-CRM against it, you need to understand what MaMa-CRM actually *is* in the landscape — its lifecycle, who owns it, what it depends on, and what business capabilities it supports. In this exercise you switch from your terminal to the **EA Assistant** inside SAP LeanIX and explore the application in natural language.
+You have created the review standard. Before you judge MaMa-CRM against it, you need to understand what MaMa-CRM actually *is* in the landscape — its lifecycle, who owns it, what it depends on, and what business capabilities it supports. In this exercise you switch to the **EA Assistant** inside SAP LeanIX and explore the application in natural language.
 
 From here to the end of the workshop, you work entirely inside the LeanIX UI.
 
@@ -10,12 +10,22 @@ From here to the end of the workshop, you work entirely inside the LeanIX UI.
 
 ## Background
 
+The **EA Assistant** is the conversational AI built into SAP LeanIX. It works by calling the same **MCP server** you connected Claude Code to in Exercise 1 — but from within the LeanIX interface, and with access to the indexed documents in your workspace. This means everything you just created from Claude Code is immediately visible to the EA Assistant. The architecture decision you created is already in the workspace — the EA Assistant can read it, cite it, and reason over it.
+
 An application review stands or falls on evidence. The EA Assistant can read the MaMa-CRM fact sheet and traverse its relationships for you — so instead of clicking through tabs and relation explorers by hand, you ask questions and it gathers the facts. Just as importantly, it tells you what is *missing*: a null field or a relationship with zero edges is itself a finding when you are reviewing governance maturity.
 
-## Step 1 — Open the EA Assistant
+## Step 1 — Open the EA Assistant and Verify the ADR
 
 1. In SAP LeanIX, navigate to **More** (top header) → **EA Assistant**.
-2. A conversational panel opens. This is where the rest of today's work happens.
+2. A conversational panel opens. Start by confirming that the architecture decision you created from Claude Code is visible in the workspace:
+
+> *"List the architecture decisions in this workspace. For each, give the title, status, and when it was last reviewed."*
+
+You should see the **"Application Review — Top 20 Criteria Standard"** ADR you created in Exercise 1. If it does not appear, navigate to **Architecture Decisions** in the UI to confirm it was saved — then ask again.
+
+> **Why this step:** It shows the same data through two lenses. You created the ADR from your terminal; the EA Assistant reads it from the workspace. This is what "govern everywhere" means in practice.
+
+> **Optional:** If the ADR is not linked to the MaMa-CRM application, ask: *"Link the 'Application Review — Top 20 Criteria Standard' architecture decision to the MaMa-CRM application."*
 
 > **Tip:** The EA Assistant keeps context within a conversation. Stay in one session through this exercise so it remembers what it has already looked up about MaMa-CRM.
 

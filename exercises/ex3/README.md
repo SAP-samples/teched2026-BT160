@@ -20,7 +20,23 @@ Your sources are:
 
 > **Why two sources for the criteria?** You created the standard as a governed ADR in Exercise 1, and the full criteria PDF is also indexed. The EA Assistant can use either — the point is that the standard is *in the workspace*, not on someone's laptop, so the review is reproducible.
 
-## Step 1 — Run the Assessment
+The documents indexed in this workspace were prepared by the session team — but the same setup works with your own content. To use the EA Assistant for reviews in your own organization, upload your company's review guidelines, architectural standards, or governance policies to **Administration → AI Assistants → Workspace Files**. Once indexed, the EA Assistant can reason over them exactly the way it reasons over the arc42 doc here.
+
+## Step 1 — Review the Indexed Documents
+
+Before running the assessment, open the admin section to see the two documents the EA Assistant is working from. This takes two minutes and gives you an important reference point for reading the EA Assistant's output.
+
+1. In SAP LeanIX, go to **Administration** (user profile menu, top right).
+2. Navigate to **AI Assistants**.
+3. Open **Workspace Files**.
+4. Locate the two indexed documents:
+   - `Application Review — Top 20 Criteria.pdf`
+   - `mama-crm-arc42.pdf`
+5. Download and briefly review each — especially the Top 20 Criteria list and the arc42 architecture documentation summary. You do not need to read them in full; skim enough to know what the EA Assistant will be drawing from.
+
+> **Why this step:** When the EA Assistant cites "criterion 12" or "arc42 section 5.2", you want to be able to verify that citation against the actual document. Knowing what the source says makes you a much better reviewer of the EA Assistant's output.
+
+## Step 2 — Run the Assessment
 
 Open (or stay in) the EA Assistant. Paste the following prompt. It is deliberately detailed — a Board review is one place where precision beats brevity.
 

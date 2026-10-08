@@ -45,9 +45,21 @@ At the end of the session, be ready to tell the room:
 
 > There is no single correct verdict. A well-evidenced "re-platform" and a well-evidenced "keep with conditions" can both be right — what matters is that the recommendation is traceable to evidence, and that you are honest about the gaps.
 
+## Optional / Speed Runner — Visualize the Architecture via MCP
+
+If you have time before the shareback, go back to Claude Code in VS Code and generate a diagram of MaMa-CRM's landscape directly from the LeanIX workspace:
+
+> *"Using the LeanIX MCP server, generate an architecture diagram for MaMa-CRM showing its IT component dependencies and the business capabilities it supports. Include lifecycle phases for each component."*
+
+This uses the diagram-generation capability of the LeanIX MCP server, released in 2025. The result is a visual summary of the same data you explored with the EA Assistant — a useful artifact to include in a shareback deck or Board presentation.
+
+> **Why this is optional:** The review stands on its own without the diagram. But if you are presenting to a Board, a visual of the dependency landscape often lands faster than a table.
+
 ## Summary
 
 You have taken MaMa-CRM from an unreviewed, unloved system to a Board-ready verdict — created a governed review standard from your terminal, explored the application with the EA Assistant, reviewed it against the standard with full evidence, enriched it with web research and a regulatory check, and delivered a defensible recommendation. That is the full arc of an evidence-based application review in SAP LeanIX.
+
+> **Coming soon:** SAP LeanIX Reports will let you publish structured, multi-section review outputs directly from the EA Assistant into a shareable report format — no copy-paste required. Keep an eye on the LeanIX release notes for this feature.
 
 ## Going Further
 
@@ -56,5 +68,7 @@ If you want to take these ideas back to your own workspace:
 - **[SAP LeanIX AI Plugins and Agent Skills](https://github.com/SAP/leanix-ai-plugins)** — reusable, portable skills for Claude Code and other AI tools that package LeanIX workflows (including ADR and review patterns like the ones you ran by hand today) into installable commands.
 - **[Setting up the EA Assistant](https://help.sap.com/docs/leanix/ea/setting-up-enterprise-architecture-assistant)** — how to upload and index your own documents so the EA Assistant can reason over them, exactly as it did with the arc42 doc and the criteria PDF.
 - **[Connecting to the MCP Server](https://help.sap.com/docs/leanix/ea/connecting-to-mcp-server)** — connect your own workspace to Claude Code, Cursor, or any MCP client, with either a technical-user API token or user-based OAuth.
+- **[EA Assistant — What's New](https://help.sap.com/whats-new/cf0cb2cb4d954c7c9aad66dca6f71305?locale=en-US&Component=SAP+LeanIX)** — recent releases for the EA Assistant, including new document reasoning, EU AI Act classification, and diagram generation via MCP.
+- **[LeanIX MCP Server — Release Notes](https://help.sap.com/docs/leanix/ea/release-notes-mcp-server)** — changelog for the LeanIX MCP server, including new tools and authentication options.
 
 [Back: Exercise 4](../ex4/README.md) | [Return to Overview](../../README.md)
