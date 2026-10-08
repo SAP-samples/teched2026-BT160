@@ -1,42 +1,62 @@
-# Exercise 2 - Exercise 2 Description
+# Exercise 2 — Explore MaMa-CRM with the EA Assistant
 
-In this exercise, we will create...
+## Overview
 
-## Exercise 2.1 Sub Exercise 1 Description
+You have created the review standard. Before you judge MaMa-CRM against it, you need to understand what MaMa-CRM actually *is* in the landscape — its lifecycle, who owns it, what it depends on, and what business capabilities it supports. In this exercise you switch from your terminal to the **EA Assistant** inside SAP LeanIX and explore the application in natural language.
 
-After completing these steps you will have created...
+From here to the end of the workshop, you work entirely inside the LeanIX UI.
 
-1. Click here.
-<br>![](/exercises/ex2/images/02_01_0010.png)
+**Duration:** 25 minutes
 
-2.	Insert this line of code.
-```abap
-response->set_text( |Hello ABAP World! | ). 
-```
+## Background
 
+An application review stands or falls on evidence. The EA Assistant can read the MaMa-CRM fact sheet and traverse its relationships for you — so instead of clicking through tabs and relation explorers by hand, you ask questions and it gathers the facts. Just as importantly, it tells you what is *missing*: a null field or a relationship with zero edges is itself a finding when you are reviewing governance maturity.
 
+## Step 1 — Open the EA Assistant
 
-## Exercise 2.2 Sub Exercise 2 Description
+1. In SAP LeanIX, navigate to **More** (top header) → **EA Assistant**.
+2. A conversational panel opens. This is where the rest of today's work happens.
 
-After completing these steps you will have...
+> **Tip:** The EA Assistant keeps context within a conversation. Stay in one session through this exercise so it remembers what it has already looked up about MaMa-CRM.
 
-1.	Enter this code.
-```abap
-DATA(lt_params) = request->get_form_fields(  ).
-READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
-  IF sy-subrc = 0.
-    response->set_status( i_code = 200
-                     i_reason = 'Everything is fine').
-    RETURN.
-  ENDIF.
+## Step 2 — Get the Shape of the Application
 
-```
+Start broad. Paste this prompt:
 
-2.	Click here.
-<br>![](/exercises/ex2/images/02_02_0010.png)
+> *"Summarize the MaMa-CRM application fact sheet: its lifecycle phase, business criticality, functional and technical fit, hosting type, total cost of ownership, and completion percentage. For any field that is empty, say so explicitly."*
+
+Read the response. Note which fields carry real values and which are empty — the empty ones are candidate gaps for your review.
+
+> **Why this matters:** "The field is empty" is not a dead end — it is evidence. Several of the Top 20 Criteria require a value to simply *exist* in the authoritative inventory (for example, an assigned business-criticality rating). A blank field fails that bar regardless of how the application actually behaves.
+
+## Step 3 — Map Ownership and Accountability
+
+Ask:
+
+> *"Who is subscribed to MaMa-CRM and in which roles? Is there a responsible owner, and are there any accountable or observer subscriptions? List any ownership gaps."*
+
+The scenario told you MaMa-CRM is "the system nobody fully owns anymore." Confirm whether the inventory data backs that up.
+
+## Step 4 — Trace the Dependencies
+
+Ask:
+
+> *"What IT components does MaMa-CRM depend on? For each component, give its lifecycle phase and provider, and flag any that are at or past end of life. Then list the business capabilities MaMa-CRM supports and any data objects it reads or writes."*
+
+MaMa-CRM is built on Java, Oracle, and the Drools rule engine. Technology currency is one of the review criteria — see whether the inventory records those components and their support status, or whether that information is missing.
+
+> **Why this matters:** Dependencies are where risk hides. An application can look healthy on its own fact sheet while sitting on a database version that lost vendor support two years ago. The EA Assistant surfaces that in one question instead of a manual traversal.
+
+## Step 5 — Build Your Landscape Notes
+
+Finish the exercise with a consolidation prompt:
+
+> *"Based on everything you have gathered about MaMa-CRM so far, give me a short structured briefing: what we know, what is missing from the inventory, and the three things that most concern you ahead of a formal review. Attribute each point to the fact sheet field or relation it came from."*
+
+Keep this briefing — it is the raw material you will formalize into an evidence table in Exercise 3.
 
 ## Summary
 
-You've now ...
+You now have a grounded picture of MaMa-CRM: its lifecycle and criticality, its ownership gaps, its technology dependencies, and its business-capability coverage — along with an explicit list of what the inventory does *not* record. In Exercise 3, you will take this picture and evaluate it criterion by criterion against the Top 20 Criteria standard, with the arc42 documentation as your second source of evidence.
 
-Continue to - [Exercise 3 - Excercise 3 ](../ex3/README.md)
+[Back: Exercise 1](../ex1/README.md) | [Next: Exercise 3 — Review MaMa-CRM Against the Standard](../ex3/README.md)
