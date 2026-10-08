@@ -39,20 +39,19 @@ Your session laptop needs a one-time setup so Claude Code can reach the internet
 Exercises 1 and 2 use Claude Code to talk to your LeanIX workspace through the MCP server. You set that connection up here, once.
 
 **You can use Claude Code in whichever way you prefer:**
-- **VS Code extension** (recommended for most participants): Visual Studio Code is pre-installed on your session laptop with the Claude Code extension. Authentication uses a browser OAuth flow — no tokens to manage.
-- **Terminal / CLI**: If you prefer working in the terminal, Claude Code is also available as a command-line tool. Authentication uses a technical-user API token from your LeanIX workspace.
+- **VS Code extension** (recommended for most participants): Visual Studio Code is pre-installed on your session laptop with the Claude Code extension. Authentication uses a browser OAuth flow.
+- **Terminal / CLI**: If you prefer working in the terminal, Claude Code is also available as a command-line tool. 
 
 Both give identical workspace access. Choose whichever feels more natural to you.
 
 > **We will walk through the MCP server setup steps live at the start of the session.** The instructions below are your reference — follow along as the facilitator demonstrates.
 
-### Option A — VS Code Extension (browser OAuth)
+### VS Code Extension 
 
 #### Open Claude Code in VS Code
 
 1. Open **Visual Studio Code** from the Start menu or taskbar.
 2. Click the **Claude Code** icon in the Activity Bar on the left side.
-3. Sign in when prompted — your session card has the credentials.
 
 ![Screenshot: Claude Code icon in the VS Code Activity Bar and the Claude Code panel open](images/ex0_claude_code_vscode_panel.png)
 
@@ -76,16 +75,6 @@ Both give identical workspace access. Choose whichever feels more natural to you
 
 ![Screenshot: LeanIX MCP server showing Connected status in Claude Code](images/ex0_mcp_connected.png)
 
-### Option B — Terminal (API token)
-
-Create a Technical User under **Administration → Technical Users**, copy the token, then run:
-
-```bash
-claude mcp add --transport http leanix <MCP-URL> \
-  --header "Authorization: Token <API-TOKEN>"
-```
-
-Note: the header value is `Token <API-TOKEN>`, not `Bearer`.
 
 ### Verify the connection works
 

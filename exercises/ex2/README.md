@@ -33,7 +33,7 @@ You should see the ADR you created in Exercise 1, with the context, decision, an
 
 Start broad. Paste this prompt:
 
-> *"Summarize the MaMa-CRM application fact sheet: its lifecycle phase, business criticality, functional and technical fit, hosting type, total cost of ownership, and completion percentage. For any field that is empty, say so explicitly."*
+> *"Summarize the MaMa-CRM application fact sheet: its lifecycle phase, business criticality, functional and technical fit, hosting type, and completion percentage. For any field that is empty, say so explicitly."*
 
 Read the response. Note which fields carry real values and which are empty — the empty ones are candidate gaps for your review.
 

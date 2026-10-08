@@ -42,7 +42,17 @@ MaMa-CRM is a classic rule-engine-driven CRM, not a machine-learning system — 
 
 > **Why this matters:** A clean negative is still a governance artifact. "We checked, and here is why it does not apply" is exactly what an audit wants to see — and it is produced here in one prompt, grounded in your own documentation.
 
-### Step 4 — Fold Both Into the Picture
+### Step 4 — Record the Determination in the Fact Sheet
+
+The EU AI Act classification is more useful on the record than in a chat reply. Ask the EA Assistant to write it back to the fact sheet:
+
+> *"Update the MaMa-CRM application fact sheet with the EU AI Act classification we just established. Set the EU AI Act risk category to the value from your assessment, and add a brief one-sentence rationale in the notes field. Confirm the update and return the field values you set."*
+
+After the EA Assistant confirms the update, open the MaMa-CRM fact sheet in the LeanIX UI and check the **EU AI Act** section to verify the values landed correctly.
+
+> **Governance note:** While you are on the fact sheet, look at the **Last Updated** field or open the change history. You will see your name — not "EA Assistant" — as the author of the change. LeanIX records every update under the authenticated user who triggered it, regardless of whether a human or an AI assistant made the edit. AI does the work; you own the record. This is what human-in-the-loop governance looks like in a system built for AI-assisted workflows.
+
+### Step 5 — Fold Both Into the Picture
 
 Ask the EA Assistant to update your working view:
 

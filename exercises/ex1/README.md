@@ -44,12 +44,15 @@ Paste this prompt into Claude Code:
 
 Claude Code will call `create_architecture_decision` and report back the new ADR's ID and URL.
 
+
+
 ## Step 3 — Confirm It Landed in LeanIX
 
 1. Open LeanIX in your browser (the tab from Getting Started).
 2. Navigate to **Architecture Decisions**.
 3. Search for the decision title and open your ADR.
 4. Confirm the **Context**, **Decision**, and **Consequences** sections match what you created — and that the status is **Accepted**.
+5. If **Approved by** is empty, click **Edit** and add your LeanIX user ID.
 
 > **This is the handoff.** You created this record from Claude Code, and it is now a first-class object in the LeanIX workspace — visible in the UI, ready to be linked to fact sheets, and readable by the EA Assistant. From here on, you work inside LeanIX.
 
