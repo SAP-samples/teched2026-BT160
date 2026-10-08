@@ -1,0 +1,60 @@
+# Exercise 5 — Deliver the Verdict
+
+## Overview
+
+You have the evidence, the gaps, an outside view of the technology, and a regulatory determination. Now you turn it into the one thing the Board actually asked for: a defensible **keep / re-platform / retire** recommendation for MaMa-CRM — and you prepare to share it back to the room.
+
+**Duration:** 15 minutes
+
+## Step 1 — Draft the Board Verdict
+
+In the EA Assistant, ask:
+
+> *"Write a Board-ready verdict on MaMa-CRM, one page maximum. Structure it as:*
+> *1. **Recommendation** — keep, re-platform, or retire — stated in the first sentence.*
+> *2. **Rationale** — the three to five findings that drive the recommendation, each attributed to its evidence (criterion, fact sheet field, arc42 section, or web source).*
+> *3. **Top risks** — what the Board is accepting if it follows this recommendation, and what it is accepting if it does nothing.*
+> *4. **Next steps** — the first three actions, each with an owner role and whether an initiative already exists in LeanIX.*
+> *Keep every claim traceable to evidence we gathered. Do not introduce new facts."*
+
+> **Why one page:** A Board decides on the summary, not the appendix. Your evidence table from Exercise 3 is the appendix; this is the page they read.
+
+## Step 2 — Pressure-Test the Verdict
+
+Before you present it, challenge your own recommendation once:
+
+> *"Argue the opposite of your recommendation in three sentences. What is the strongest case against it, and what single piece of evidence would most change the decision if it turned out to be wrong?"*
+
+If the counter-argument is weak, your recommendation is solid. If it is strong, you have just found the thing to say out loud in the shareback — the honest caveat that makes a recommendation credible.
+
+## Step 3 — Capture Your Deliverable
+
+Keep your verdict and the supporting evidence table ready to show. You can:
+
+- Copy the verdict into your notes, or
+- Keep the EA Assistant conversation open to project it directly, or
+- Open the MaMa-CRM fact sheet and the ADR alongside it to show the evidence trail.
+
+## Step 4 — Shareback
+
+At the end of the session, be ready to tell the room:
+
+- **What did you find?** Your recommendation and the two or three findings behind it.
+- **Which path did you take?** Where the inventory, the arc42 doc, web research, and the EU AI Act check each changed your thinking.
+- **What surprised you?** The conflict, the empty field, or the external fact you did not expect.
+
+> There is no single correct verdict. A well-evidenced "re-platform" and a well-evidenced "keep with conditions" can both be right — what matters is that the recommendation is traceable to evidence, and that you are honest about the gaps.
+
+## Summary
+
+You have taken MaMa-CRM from an unreviewed, unloved system to a Board-ready verdict — created a governed review standard from your terminal, explored the application with the EA Assistant, reviewed it against the standard with full evidence, enriched it with web research and a regulatory check, and delivered a defensible recommendation. That is the full arc of an evidence-based application review in SAP LeanIX.
+
+## Going Further
+
+If you want to take these ideas back to your own workspace:
+
+- **[SAP LeanIX AI Plugins and Agent Skills](https://github.com/SAP/leanix-ai-plugins)** — reusable, portable skills for Claude Code and other AI tools that package LeanIX workflows (including ADR and review patterns like the ones you ran by hand today) into installable commands.
+- **[Setting up the EA Assistant](https://help.sap.com/docs/leanix/ea/setting-up-enterprise-architecture-assistant)** — how to upload and index your own documents so the EA Assistant can reason over them, exactly as it did with the arc42 doc and the criteria PDF.
+- **[Connecting to the MCP Server](https://help.sap.com/docs/leanix/ea/connecting-to-mcp-server)** — connect your own workspace to Claude Code, Cursor, or any MCP client, with either a technical-user API token or user-based OAuth.
+
+[Back: Exercise 4](../ex4/README.md) | [Return to Overview](../../README.md)
