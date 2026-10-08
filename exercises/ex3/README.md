@@ -34,6 +34,8 @@ Before running the assessment, open the admin section to see the two documents t
    - `mama-crm-arc42.pdf`
 5. Download and briefly review each — especially the Top 20 Criteria list and the arc42 architecture documentation summary. You do not need to read them in full; skim enough to know what the EA Assistant will be drawing from.
 
+> **Taking them home:** Both documents are also in the [`sampleDocuments/`](../../sampleDocuments/) folder of this repository. You can download them directly from there and upload them to your own LeanIX workspace after the session to run the same review pattern against your own applications.
+
 > **Why this step:** When the EA Assistant cites "criterion 12" or "arc42 section 5.2", you want to be able to verify that citation against the actual document. Knowing what the source says makes you a much better reviewer of the EA Assistant's output.
 
 ## Step 2 — Run the Assessment

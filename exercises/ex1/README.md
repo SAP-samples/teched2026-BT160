@@ -24,9 +24,9 @@ Claude Code is already connected to your workspace from Getting Started. Start b
 
 In the Claude Code chat in VS Code, ask:
 
-> *"Using the LeanIX MCP server, find the MaMa-CRM application fact sheet. Summarize its lifecycle phase, business criticality, and owner subscriptions. Then list the IT components and business capabilities it is related to."*
+> *"Using the LeanIX MCP server, look up the MaMa-CRM application fact sheet and show me all its relations — the IT components, business capabilities, interfaces, and any other fact sheets it is connected to. For each relation include the name and lifecycle phase where available."*
 
-Claude Code will call the MCP server and return what it finds in your workspace. Read the summary — you will recognize this application again when the EA Assistant describes it from Exercise 2 onward.
+Claude Code will call the MCP server and return what it finds in your workspace. Read the output — you will recognize this application and its dependency landscape again when the EA Assistant describes it from Exercise 2 onward.
 
 > **What just happened:** Claude Code called real tools in your live LeanIX workspace — not a demo environment, not mocked data. You are reading actual inventory records. If Claude Code reports that MaMa-CRM does not exist or returns an authentication error, re-check the MCP connection from Getting Started.
 

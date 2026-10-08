@@ -98,6 +98,7 @@ This workshop sits in the **Accelerate and Derisk Your AI-Native Transformation*
 - [SAP LeanIX — Setting up the EA Assistant](https://help.sap.com/docs/leanix/ea/setting-up-enterprise-architecture-assistant)
 - [SAP LeanIX AI Plugins and Agent Skills](https://github.com/SAP/leanix-ai-plugins)
 - [EU AI Act — Official Text](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689)
+- [Sample Documents](sampleDocuments/) — the arc42 architecture documentation and Top 20 Criteria PDF used in this workshop; download and upload to your own workspace to run the same review pattern against your own applications
 
 ## How to obtain support
 

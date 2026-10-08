@@ -14,16 +14,16 @@ The **EA Assistant** is the conversational AI built into SAP LeanIX. It works by
 
 An application review stands or falls on evidence. The EA Assistant can read the MaMa-CRM fact sheet and traverse its relationships for you — so instead of clicking through tabs and relation explorers by hand, you ask questions and it gathers the facts. Just as importantly, it tells you what is *missing*: a null field or a relationship with zero edges is itself a finding when you are reviewing governance maturity.
 
-## Step 1 — Open the EA Assistant and Verify the ADR
+## Step 1 — Open the EA Assistant and Review the ADR
 
 1. In SAP LeanIX, navigate to **More** (top header) → **EA Assistant**.
-2. A conversational panel opens. Start by confirming that the architecture decision you created from Claude Code is visible in the workspace:
+2. A conversational panel opens. Start by pulling up the architecture decision you created from Claude Code:
 
-> *"List the architecture decisions in this workspace. For each, give the title, status, and when it was last reviewed."*
+> *"Find the architecture decision titled 'Application Review — Top 20 Criteria Standard'. Show me its full content: the context, decision statement, and consequences."*
 
-You should see the **"Application Review — Top 20 Criteria Standard"** ADR you created in Exercise 1. If it does not appear, navigate to **Architecture Decisions** in the UI to confirm it was saved — then ask again.
+You should see the ADR you created in Exercise 1, with the context, decision, and consequences exactly as you defined them. If it does not appear, navigate to **Architecture Decisions** in the UI to confirm it was saved — then ask again.
 
-> **Why this step:** It shows the same data through two lenses. You created the ADR from your terminal; the EA Assistant reads it from the workspace. This is what "govern everywhere" means in practice.
+> **Why this step:** It shows the same data through two lenses. You created the ADR from your terminal via MCP; the EA Assistant reads it from the same workspace. This is what "govern everywhere" means in practice — and it confirms that the review standard the EA Assistant will reason over for the rest of the session is the one you just created, not an assumption.
 
 > **Optional:** If the ADR is not linked to the MaMa-CRM application, ask: *"Link the 'Application Review — Top 20 Criteria Standard' architecture decision to the MaMa-CRM application."*
 
