@@ -1,5 +1,7 @@
 # Exercise 3 — Review MaMa-CRM Against the Standard
 
+![URGENT: Review of MaMa CRM — email from the CIO](../../images/mama-crm-urgent-review-email.png)
+
 ## Overview
 
 This is the heart of the workshop. You will have the EA Assistant evaluate MaMa-CRM against the **Application Review — Top 20 Criteria**, drawing evidence from two authorized sources — the structured LeanIX inventory and the indexed arc42 architecture documentation — and produce an evidence table, a summary, and a gap register.
