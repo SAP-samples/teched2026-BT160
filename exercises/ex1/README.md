@@ -58,7 +58,7 @@ https://<workspace-subdomain>.leanix.net/services/mcp-server/v1/mcp
 
    You should see `leanix` in the list.
 
-> **Why a technical-user token (not a personal login)?** Everyone in this session shares one workspace, so it is pre-provisioned with a technical user whose token is on your session card. (The MCP server also supports OAuth for individual user-based access in your own organization — but a shared token is the simplest path for a workshop.)
+> **Why a technical-user token (not a browser login)?** Your workspace is pre-provisioned with a technical user whose API token is on your session card, which keeps the terminal setup to a single command. (The MCP server also supports OAuth for individual user-based access — handy in your own organization, but the token is the fastest path here.)
 
 > **Where this is stored:** `claude mcp add` writes the server into your Claude Code configuration, including the header. For a project-scoped setup you can also commit a `.mcp.json` file to a repo — but for this workshop the single `add` command above is all you need.
 
@@ -82,11 +82,11 @@ Because the token is already in the header you registered, there is no separate 
 
 ## Step 4 — Create the Review-Standard ADR
 
-Now create the Architecture Decision that captures InDAC's review standard. Replace `[PXX]` with your participant number (e.g., P07) so you can find your own ADR later.
+Now create the Architecture Decision that captures InDAC's review standard.
 
 Paste this prompt into Claude Code:
 
-> *"Using the LeanIX MCP server, create an architecture decision titled 'Application Review — Top 20 Criteria Standard — [PXX]'. Set its status to Accepted. Populate it as follows:*
+> *"Using the LeanIX MCP server, create an architecture decision titled 'Application Review — Top 20 Criteria Standard'. Set its status to Accepted. Populate it as follows:*
 > - *Context: InDAC's architecture group has published a Top 20 Criteria standard — the universally applicable, immediately verifiable criteria used for portfolio rationalisation, M&A due diligence, and governance escalations. Every application review must now be assessed against this standard.*
 > - *Decision: All application reviews at InDAC are evaluated against the Top 20 Criteria. Each criterion is assessed as Pass or Gap, with evidence. A review informs a keep / re-platform / retire recommendation.*
 > - *Consequences: Reviews become comparable across the portfolio and traceable to an approved standard. Applications with unaddressed Gaps on gate criteria cannot be recommended for continued investment without a remediation plan.*
@@ -94,13 +94,11 @@ Paste this prompt into Claude Code:
 
 Claude Code will call `create_architecture_decision` and report back the new ADR's ID and URL.
 
-> **Why your participant number matters:** Everyone in this session shares one workspace. Putting `[PXX]` in the ADR title makes it easy to find your own decision in Exercise 3, when you assess MaMa-CRM against it.
-
 ## Step 5 — Confirm It Landed in LeanIX
 
 1. Open LeanIX in your browser (the tab from Getting Started).
 2. Navigate to **Architecture Decisions**.
-3. Search for your participant number and open your ADR.
+3. Search for the decision title and open your ADR.
 4. Confirm the **Context**, **Decision**, and **Consequences** sections match what you created — and that the status is **Accepted**.
 
 > **This is the handoff.** You created this record from your terminal, and it is now a first-class object in the LeanIX workspace — visible in the UI, ready to be linked to fact sheets, and readable by the EA Assistant. From here on, you work inside LeanIX.

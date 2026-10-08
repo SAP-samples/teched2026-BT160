@@ -49,7 +49,7 @@ Last quarter, InDAC's architecture group published a new **Application Review â€
 
 | # | Exercise | Surface | Duration |
 |---|----------|---------|----------|
-| GS | [Getting Started](exercises/ex0/README.md) | Log in to SAP LeanIX, orient yourself, and find your participant number | LeanIX | 10 min |
+| GS | [Getting Started](exercises/ex0/README.md) | Prepare your laptop, log in to your SAP LeanIX workspace, and orient yourself | LeanIX | 10 min |
 | 1 | [Create the Review Standard from Claude Code (via MCP)](exercises/ex1/README.md) | Connect Claude Code to the workspace and create the review-standard ADR | Agent â†’ LeanIX | 20 min |
 | 2 | [Explore MaMa-CRM with the EA Assistant](exercises/ex2/README.md) | Use the EA Assistant to map the application and its landscape | LeanIX UI | 25 min |
 | 3 | [Review MaMa-CRM Against the Standard](exercises/ex3/README.md) | Produce an evidence table and gap register against the Top 20 Criteria | LeanIX UI | 25 min |
@@ -60,7 +60,7 @@ Last quarter, InDAC's architecture group published a new **Application Review â€
 
 ## Requirements
 
-- Access to the shared **SAP LeanIX** workspace (URL, credentials, and MCP token provided on your session card)
+- Access to **your own SAP LeanIX** workspace (URL, credentials, and MCP token provided on your session card) â€” each participant gets a dedicated workspace in which they are the admin
 - **Claude Code** â€” pre-installed on your session laptop (used briefly in Exercise 1)
 - A modern web browser (Chrome or Edge recommended)
 - No prior experience with SAP LeanIX, the EA Assistant, or MCP required
@@ -69,8 +69,8 @@ Last quarter, InDAC's architecture group published a new **Application Review â€
 
 | System | URL | Credentials |
 |--------|-----|-------------|
-| SAP LeanIX | *(provided on session card)* | *(provided on session card)* |
-| LeanIX MCP server | *(provided on session card)* | Technical-user API token *(provided on session card)* |
+| SAP LeanIX | *(your workspace URL â€” on session card)* | *(on session card)* |
+| LeanIX MCP server | *(your workspace MCP endpoint â€” on session card)* | API token *(on session card)* |
 
 ## Exercises
 
