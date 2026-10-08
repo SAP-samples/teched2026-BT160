@@ -51,9 +51,8 @@ If you have time before the shareback, go back to Claude Code in VS Code and gen
 
 > *"Using the LeanIX MCP server, generate an architecture diagram for MaMa-CRM showing its IT component dependencies and the business capabilities it supports. Include lifecycle phases for each component."*
 
-This uses the diagram-generation capability of the LeanIX MCP server, released in 2025. The result is a visual summary of the same data you explored with the EA Assistant — a useful artifact to include in a shareback deck or Board presentation.
+This uses the diagram-generation capability of the LeanIX MCP server. The result is a visual summary of the same data you explored with the EA Assistant — a useful artifact to include in a shareback deck or Board presentation.
 
-> **Why this is optional:** The review stands on its own without the diagram. But if you are presenting to a Board, a visual of the dependency landscape often lands faster than a table.
 
 ## Summary
 

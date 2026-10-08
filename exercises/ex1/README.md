@@ -45,7 +45,6 @@ Paste this prompt into Claude Code:
 Claude Code will call `create_architecture_decision` and report back the new ADR's ID and URL.
 
 
-
 ## Step 3 — Confirm It Landed in LeanIX
 
 1. Open LeanIX in your browser (the tab from Getting Started).
