@@ -1,11 +1,13 @@
 <!-- SPDX-FileCopyrightText: 2026 SAP SE or an SAP affiliate company and teched2026-BT160 contributors -->
 <!-- SPDX-License-Identifier: Apache-2.0 -->
 
-# From Review to Verdict: Governing an Application with SAP LeanIX, the EA Assistant, and MCP
+# SAP LeanIX solutions: Govern with Enterprise Architecture Assistant and MCP
 
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2026-BT160)](https://api.reuse.software/info/github.com/SAP-samples/teched2026-BT160)
 
 ## Session Overview
+
+Build AI-native capabilities directly within the SAP LeanIX solutions ecosystem. Using MCP server for SAP LeanIX solutions and Enterprise Architecture Assistant, connect AI agents and assistants to your architecture data and obtain skills that surface enterprise architecture insights. Make your architecture repository accessible to AI tooling.
 
 Every enterprise runs a long tail of self-built applications that never got the scrutiny the ERP backbone did. Sooner or later, someone has to decide what to do with them — and the decision has to be defensible.
 
