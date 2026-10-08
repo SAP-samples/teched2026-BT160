@@ -2,9 +2,9 @@
 
 ## Overview
 
-Before you can review MaMa-CRM against anything, the review standard needs to exist *inside* LeanIX — not as a PDF on a shared drive, but as a governed **Architecture Decision Record (ADR)** that every future review can be checked against. In this exercise you connect **Claude Code** to your LeanIX workspace through the **MCP server** and create that ADR without ever leaving your terminal.
+Before you can review MaMa-CRM against anything, the review standard needs to exist *inside* LeanIX — not as a PDF on a shared drive, but as a governed **Architecture Decision Record (ADR)** that every future review can be checked against. In this exercise you connect **Claude Code** to your LeanIX workspace through the **MCP server** and create that ADR from your terminal.
 
-This is the one exercise where you work outside the LeanIX UI. Everything after this happens inside LeanIX — but this first step shows you that the same workspace is also reachable from your own developer tools.
+Apart from a quick trip into the LeanIX admin area to mint an access token, this is the one exercise where you work outside the LeanIX UI — it shows that the same workspace you'll use for the rest of the session is also reachable from your own developer tools.
 
 **Duration:** 20 minutes
 
@@ -31,17 +31,34 @@ Your session laptop has **Claude Code** pre-installed.
 
    You should see a version number. If the command is not found, raise your hand — your trainer will help before you continue.
 
-## Step 2 — Register the LeanIX MCP Server
+> **Did you run `LMU_BT160`?** If you skipped the laptop setup in Getting Started, do it now (Start menu → `bt160` → run `LMU_BT160`). Without the proxy setup, the next steps will fail to reach LeanIX.
 
-You will add the LeanIX MCP server to Claude Code using the endpoint and API token from your session card. The server speaks HTTP transport and authenticates with a **technical-user API token** passed as a request header.
+## Step 2 — Create Your Technical-User API Token
 
-The endpoint follows this shape (yours is pre-filled on the card — do not retype it from memory):
+The MCP server authenticates with a **technical-user API token** from your workspace. You are the admin of your own workspace, so you create this token yourself. It is a one-time, two-minute task.
+
+1. In SAP LeanIX, open the **user profile menu** (top right) and select **Administration**.
+2. Go to **Technical Users**.
+3. Click **Create Technical User** (or **New Technical User**).
+4. Give it a descriptive name — for example, `claude-code-mcp` — and assign the **Admin** permission role so it can create architecture decisions.
+5. Click **Create**. An **API token** is generated and shown.
+6. **Copy the token immediately and keep it somewhere handy for the next step.**
+
+> **⚠️ The token is shown only once.** If you navigate away before copying it, you cannot retrieve it — you will have to create another technical user and generate a new token. Copy it now.
+
+> **What is a technical user?** A technical user is a non-human service account used for programmatic access. The token it carries is what lets Claude Code act in your workspace over the MCP server, instead of a browser login.
+
+## Step 3 — Register the LeanIX MCP Server
+
+You will now add the LeanIX MCP server to Claude Code using your workspace's MCP endpoint and the token you just created. The server speaks HTTP transport and authenticates with the **technical-user API token** passed as a request header.
+
+The endpoint follows this shape (your workspace URL is on your session card):
 
 ```
 https://<workspace-subdomain>.leanix.net/services/mcp-server/v1/mcp
 ```
 
-1. From your terminal, register the server with Claude Code. Replace `<MCP-URL>` and `<API-TOKEN>` with the exact values from your session card:
+1. From your terminal, register the server with Claude Code. Replace `<MCP-URL>` with your workspace's MCP endpoint and `<API-TOKEN>` with the token from Step 2:
 
    ```bash
    claude mcp add --transport http leanix <MCP-URL> \
@@ -58,11 +75,11 @@ https://<workspace-subdomain>.leanix.net/services/mcp-server/v1/mcp
 
    You should see `leanix` in the list.
 
-> **Why a technical-user token (not a browser login)?** Your workspace is pre-provisioned with a technical user whose API token is on your session card, which keeps the terminal setup to a single command. (The MCP server also supports OAuth for individual user-based access — handy in your own organization, but the token is the fastest path here.)
+> **Why a technical-user token (not a browser login)?** The token you minted in Step 2 lets Claude Code authenticate in a single command, with no interactive login flow in the terminal. (The MCP server also supports OAuth for individual user-based access — handy in your own organization — but the token is the fastest path here.)
 
 > **Where this is stored:** `claude mcp add` writes the server into your Claude Code configuration, including the header. For a project-scoped setup you can also commit a `.mcp.json` file to a repo — but for this workshop the single `add` command above is all you need.
 
-## Step 3 — Verify the Connection
+## Step 4 — Verify the Connection
 
 Because the token is already in the header you registered, there is no separate login step — Claude Code is authenticated the moment the server is added.
 
@@ -76,11 +93,11 @@ Because the token is already in the header you registered, there is no separate 
 
    > *"Using the LeanIX MCP server, what architecture decision templates are available in this workspace?"*
 
-   Claude Code should call the MCP server and return at least the **Architecture Decision** template. If it returns an authentication or connection error, re-check the URL and token from Step 2 — the most common mistake is using `Bearer` instead of `Token`, or a trailing space in the pasted token.
+   Claude Code should call the MCP server and return at least the **Architecture Decision** template. If it returns an authentication or connection error, re-check the URL and token from Step 3 — the most common mistake is using `Bearer` instead of `Token`, or a trailing space in the pasted token.
 
 > **What just happened:** Claude Code called a real tool (`get_architecture_templates`) in your live LeanIX workspace and read back the result. You are now driving LeanIX from your terminal.
 
-## Step 4 — Create the Review-Standard ADR
+## Step 5 — Create the Review-Standard ADR
 
 Now create the Architecture Decision that captures InDAC's review standard.
 
@@ -94,7 +111,7 @@ Paste this prompt into Claude Code:
 
 Claude Code will call `create_architecture_decision` and report back the new ADR's ID and URL.
 
-## Step 5 — Confirm It Landed in LeanIX
+## Step 6 — Confirm It Landed in LeanIX
 
 1. Open LeanIX in your browser (the tab from Getting Started).
 2. Navigate to **Architecture Decisions**.

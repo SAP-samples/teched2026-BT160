@@ -70,7 +70,7 @@ Last quarter, InDAC's architecture group published a new **Application Review �
 | System | URL | Credentials |
 |--------|-----|-------------|
 | SAP LeanIX | *(your workspace URL — on session card)* | *(on session card)* |
-| LeanIX MCP server | *(your workspace MCP endpoint — on session card)* | API token *(on session card)* |
+| LeanIX MCP server | *(your workspace MCP endpoint — on session card)* | Technical-user API token *(you create one in Exercise 1)* |
 
 ## Exercises
 
