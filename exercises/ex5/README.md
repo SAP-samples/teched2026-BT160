@@ -30,13 +30,33 @@ Before you present it, challenge your own recommendation once.
 
 If the counter-argument is weak, your recommendation is solid. If it is strong, you have just found the thing to say out loud in the shareback — the honest caveat that makes a recommendation credible.
 
-## Step 3 — Capture Your Deliverable
+## Step 3 — Capture Your Deliverable as a Governed Initiative
 
-Keep your verdict and the supporting evidence table ready to show. You can:
+A recommendation that lives only in a chat session is not governed — it is ephemeral. The step that turns a verdict into a tracked piece of work is recording the successor and creating an initiative with the findings embedded.
 
-- Copy the verdict into your notes, or
-- Keep the EA Assistant conversation open to project it directly, or
-- Open the MaMa-CRM fact sheet and the ADR alongside it to show the evidence trail.
+**First — set the successor on the MaMa-CRM fact sheet.**
+
+In Exercise 4 you created a fact sheet for the replacement platform. Bring that connection into the inventory.
+
+⌨️ **➤ Ask the EA Assistant:**
+
+> *"Set the replacement application we created in Exercise 4 as the successor of MaMa-CRM on the application fact sheet. Return confirmation of the update."*
+
+**Then — create the initiative.**
+
+⌨️ **➤ Ask the EA Assistant:**
+
+> *"Create a LeanIX initiative to formally track the recommended action for MaMa-CRM. Name it after the recommendation (for example 'MaMa-CRM Re-platform' or 'MaMa-CRM Retirement'). In the description include: the recommendation, the top three findings that drove it with their evidence sources, and the first three next steps with owner roles. Set the status to Submitted. Set its parent initiative to 'Consolidate customer platform'. Link it to both the MaMa-CRM application fact sheet and the successor application you just recorded. Return the initiative name, ID, and URL."*
+
+Once confirmed, open the MaMa-CRM fact sheet in the LeanIX UI and verify that the successor appears under **Successors** and the initiative appears under **Initiatives**.
+
+> [!NOTE]
+> **Why this matters:** Before this workshop, MaMa-CRM had no successor and no active initiative — the gap register in Exercise 3 correctly reported that. You have now closed both gaps in one step. The initiative carries the findings, not just a label, so anyone opening it can see what was decided, why, and who owns the next steps. Placing it as a child of **Consolidate customer platform** positions the MaMa-CRM work within the broader strategic program InDAC is running across its customer-facing application landscape — so portfolio stakeholders see it in context, not as an isolated project.
+
+> [!TIP]
+> **From portfolio decision to project execution:** A LeanIX initiative is the portfolio-level artifact — it records the decision and the evidence. When the Board approves and the project kicks off, the initiative can be connected to a project in **SAP Cloud ALM**, which tracks execution: milestones, tasks, deployment status. The initiative in LeanIX stays the authoritative record of *why* the project exists; Cloud ALM tracks *how* it is delivered. That handoff is where EA governance meets project management.
+
+Keep the EA Assistant conversation and the MaMa-CRM fact sheet open to show the evidence trail during the shareback.
 
 ## Step 4 — Shareback
 
@@ -68,6 +88,7 @@ You have taken MaMa-CRM from an unreviewed, unloved system to a Board-ready verd
 
 If you want to take these ideas back to your own workspace:
 
+- **[EU AI Act Classification in the EA Assistant](https://help.sap.com/docs/LEANIX/72d375467c1e4dcb872dfa2998b6328d/d4ca4b50141d4cdfb0122915e2b91f25.html)** — classify any application in your own workspace against the EU AI Act directly from the EA Assistant. A clean negative is itself a governance artifact; a positive triggers a risk category and rationale on the fact sheet. The extension must be activated under **Administration → Optional Features and Early Access**.
 - **[SAP LeanIX AI Plugins and Agent Skills](https://github.com/SAP/leanix-ai-plugins)** — reusable, portable skills for Claude Code and other AI tools that package LeanIX workflows (including ADR and review patterns like the ones you ran by hand today) into installable commands.
 - **[Setting up the EA Assistant](https://help.sap.com/docs/leanix/ea/setting-up-enterprise-architecture-assistant)** — how to upload and index your own documents so the EA Assistant can reason over them, exactly as it did with the arc42 doc and the criteria PDF.
 - **[Connecting to the MCP Server](https://help.sap.com/docs/leanix/ea/connecting-to-mcp-server)** — connect your own workspace to Claude Code, Cursor, or any MCP client, with either a technical-user API token or user-based OAuth.

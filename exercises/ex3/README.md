@@ -76,7 +76,7 @@ Use follow-up prompts to challenge it, for example:
 
 ⌨️ **➤ Ask the EA Assistant:**
 
-> *"For criterion 4 (Technology Currency) you assigned a Pass. Show me the exact arc42 section and the LeanIX IT-component lifecycle values you based that on. If the component lifecycle is empty in LeanIX, downgrade the result."*
+> *"For criterion 4 (Technology Currency) you assigned a Gap, citing the arc42 Technology Currency Note. Now check the LeanIX lifecycle fields for the three IT components — Oracle Database, Java, and Drools. Are those fields populated? If the lifecycle data is missing from LeanIX, what does that mean for InDAC's ability to track and remediate this gap through the system of record?"*
 
 ## Step 4 — Tie It to the Three-Way Decision
 
