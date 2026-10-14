@@ -19,7 +19,7 @@ An application review stands or falls on evidence. The EA Assistant reads the Ma
 1. In SAP LeanIX, navigate to **More** (top header) → **EA Assistant**.
 2. A conversational panel opens. Start by pulling up the architecture decision you created from Claude Code:
 
-**➤ Ask the EA Assistant:**
+⌨️ **➤ Ask the EA Assistant:**
 
 > *"Find the architecture decision titled 'Application Review — Top 20 Criteria Standard'. Show me its full content: the context, decision statement, and consequences."*
 
@@ -38,7 +38,7 @@ You should see the ADR you created in Exercise 1, with the context, decision, an
 
 Start broad.
 
-**➤ Ask the EA Assistant:**
+⌨️ **➤ Ask the EA Assistant:**
 
 > *"Summarize the MaMa-CRM application fact sheet: its lifecycle phase, business criticality, functional and technical fit, hosting type, and completion percentage. For any field that is empty, say so explicitly."*
 
@@ -49,7 +49,7 @@ Read the response. Note which fields carry real values and which are empty — t
 
 ## Step 3 — Map Ownership and Accountability
 
-**➤ Ask the EA Assistant:**
+⌨️ **➤ Ask the EA Assistant:**
 
 > *"Who is subscribed to MaMa-CRM and in which roles? Is there a responsible owner, and are there any accountable or observer subscriptions? List any ownership gaps."*
 
@@ -57,7 +57,7 @@ The scenario told you MaMa-CRM is "the system nobody fully owns anymore." Confir
 
 ## Step 4 — Trace the Dependencies
 
-**➤ Ask the EA Assistant:**
+⌨️ **➤ Ask the EA Assistant:**
 
 > *"What IT components does MaMa-CRM depend on? For each component, give its lifecycle phase and provider, and flag any that are at or past end of life. Then list the business capabilities MaMa-CRM supports and any data objects it reads or writes."*
 
@@ -70,7 +70,7 @@ MaMa-CRM is built on Java, Oracle, and the Drools rule engine. Technology curren
 
 Finish the exercise with a consolidation prompt.
 
-**➤ Ask the EA Assistant:**
+⌨️ **➤ Ask the EA Assistant:**
 
 > *"Based on everything you have gathered about MaMa-CRM so far, give me a short structured briefing: what we know, what is missing from the inventory, and the three things that most concern you ahead of a formal review. Attribute each point to the fact sheet field or relation it came from."*
 

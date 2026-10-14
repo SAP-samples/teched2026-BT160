@@ -8,7 +8,7 @@ You have the evidence, the gaps, an outside view of the technology, and a regula
 
 ## Step 1 — Draft the Board Verdict
 
-**➤ Ask the EA Assistant:**
+⌨️ **➤ Ask the EA Assistant:**
 
 > *"Write a Board-ready verdict on MaMa-CRM, one page maximum. Structure it as:*
 > *1. **Recommendation** — keep, re-platform, or retire — stated in the first sentence.*
@@ -24,7 +24,7 @@ You have the evidence, the gaps, an outside view of the technology, and a regula
 
 Before you present it, challenge your own recommendation once.
 
-**➤ Ask the EA Assistant:**
+⌨️ **➤ Ask the EA Assistant:**
 
 > *"Argue the opposite of your recommendation in three sentences. What is the strongest case against it, and what single piece of evidence would most change the decision if it turned out to be wrong?"*
 

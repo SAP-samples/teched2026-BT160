@@ -47,7 +47,7 @@ Before running the assessment, open the admin section to see the two documents t
 
 ## Step 2 — Run the Assessment
 
-**➤ Open (or stay in) the EA Assistant. Paste the following prompt:**
+⌨️ **➤ Open (or stay in) the EA Assistant. Paste the following prompt:**
 
 > **Assessment: MaMa-CRM against the Top 20 Criteria**
 >
@@ -74,7 +74,7 @@ The EA Assistant will produce a long, structured answer. Don't take it at face v
 
 Use follow-up prompts to challenge it, for example:
 
-**➤ Ask the EA Assistant:**
+⌨️ **➤ Ask the EA Assistant:**
 
 > *"For criterion 4 (Technology Currency) you assigned a Pass. Show me the exact arc42 section and the LeanIX IT-component lifecycle values you based that on. If the component lifecycle is empty in LeanIX, downgrade the result."*
 
@@ -82,7 +82,7 @@ Use follow-up prompts to challenge it, for example:
 
 The Board does not want a scorecard — it wants a direction.
 
-**➤ Ask the EA Assistant:**
+⌨️ **➤ Ask the EA Assistant:**
 
 > *"Given this assessment, which Top 20 Criteria are the gate criteria that would block continued investment in MaMa-CRM as-is? Group the gaps into three buckets: those that argue for KEEP (fixable with data/governance work), those that argue for RE-PLATFORM (architecture or technology problems), and those that argue for RETIRE (the application should not continue). Be explicit about which bucket is heaviest."*
 
@@ -93,7 +93,7 @@ The Board does not want a scorecard — it wants a direction.
 
 The review is on the record. Now formalize the connection between the fact sheet and the standard it was reviewed against.
 
-**➤ Ask the EA Assistant:**
+⌨️ **➤ Ask the EA Assistant:**
 
 > *"Link the MaMa-CRM application fact sheet to the 'Application Review — Top 20 Criteria Standard' architecture decision."*
 

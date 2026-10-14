@@ -92,7 +92,7 @@ Claude Code will open a browser window for OAuth login. Sign in to your LeanIX w
 
 ### ✅ Verify the connection works
 
-In the Claude Code chat, ask:
+⌨️ In the Claude Code chat, ask:
 
 > *"Using the LeanIX MCP server, list the architecture decision templates available in this workspace."*
 

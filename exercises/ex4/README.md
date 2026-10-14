@@ -12,7 +12,7 @@ MaMa-CRM runs on Java, Oracle, and the Drools rule engine, with persistence gene
 
 ### Step 1 — Research Technology Currency
 
-**➤ Ask the EA Assistant:**
+⌨️ **➤ Ask the EA Assistant:**
 
 > *"Using web research, assess the current support and end-of-life status of MaMa-CRM's core technologies: the Java runtime, Oracle Database, and the Drools rule engine. For each, note the latest supported versions and any end-of-support dates that would make a current deployment a risk. Cite your sources."*
 
@@ -22,7 +22,7 @@ Compare what you learn to criterion 4 (Technology Currency) from Exercise 3. Doe
 
 If the leaning is toward re-platform or retire, the Board will ask "replace it with what?"
 
-**➤ Ask the EA Assistant:**
+⌨️ **➤ Ask the EA Assistant:**
 
 > *"Using web research, identify two or three credible options for a mass-market, multi-mandator CRM / customer-communication platform that could replace a self-built system like MaMa-CRM — including at least one SAP option. For each, give a one-line fit summary against MaMa-CRM's core need: onboarding a new mandator or campaign without changing code."*
 
@@ -38,7 +38,7 @@ Governance reviews increasingly have to answer a compliance question up front: d
 
 ### Step 3 — Classify MaMa-CRM
 
-**➤ Ask the EA Assistant:**
+⌨️ **➤ Ask the EA Assistant:**
 
 > *"Classify MaMa-CRM against the EU AI Act. Based on the fact sheet and the arc42 documentation, does this application include AI systems in the meaning of the Act? If so, what risk category applies and why? If it does not, state that explicitly and explain the basis for excluding it."*
 
@@ -51,7 +51,7 @@ MaMa-CRM is a classic rule-engine-driven CRM, not a machine-learning system — 
 
 The EU AI Act classification is more useful on the record than in a chat reply.
 
-**➤ Ask the EA Assistant:**
+⌨️ **➤ Ask the EA Assistant:**
 
 > *"Update the MaMa-CRM application fact sheet with the EU AI Act classification we just established. Set the EU AI Act risk category to the value from your assessment, and add a brief one-sentence rationale in the notes field. Confirm the update and return the field values you set."*
 
@@ -62,7 +62,7 @@ After the EA Assistant confirms the update, open the MaMa-CRM fact sheet in the 
 
 ### Step 5 — Fold Both Into the Picture
 
-**➤ Ask the EA Assistant:**
+⌨️ **➤ Ask the EA Assistant:**
 
 > *"Add the technology-currency web findings and the EU AI Act determination to the gap register from the earlier assessment. Re-rank the gaps if the new evidence changes their severity, and note any gap where an external source now gives us higher confidence than internal data alone did."*
 

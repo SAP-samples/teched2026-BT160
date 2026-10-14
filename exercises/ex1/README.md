@@ -24,7 +24,7 @@ You *could* create that ADR by clicking through the LeanIX UI. Instead, you'll d
 
 Claude Code is already connected to your workspace from Getting Started. Start by using it to explore the application you are about to review — this is both a useful orientation and a confirmation that the MCP connection works end-to-end.
 
-**➤ In the Claude Code chat in VS Code, ask:**
+⌨️ **➤ In the Claude Code chat in VS Code, ask:**
 
 > *"Using the LeanIX MCP server, look up the MaMa-CRM application fact sheet and show me all its relations — the IT components, business capabilities, interfaces, and any other fact sheets it is connected to. For each relation include the name and lifecycle phase where available."*
 
@@ -37,7 +37,7 @@ Claude Code will call the MCP server and return what it finds in your workspace.
 
 Now create the Architecture Decision that captures InDAC's review standard.
 
-**➤ Paste this into Claude Code:**
+⌨️ **➤ Paste this into Claude Code:**
 
 > *"Using the LeanIX MCP server, create an architecture decision titled 'Application Review — Top 20 Criteria Standard'. Set its status to Accepted. Populate it as follows:*
 > - *Context: InDAC's architecture group has published a Top 20 Criteria standard — the universally applicable, immediately verifiable criteria used for portfolio rationalisation, M&A due diligence, and governance escalations. Every application review must now be assessed against this standard.*

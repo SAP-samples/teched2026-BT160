@@ -49,16 +49,14 @@ Last quarter, **you** — John, senior enterprise architect at InDAC — present
 
 ## Session Structure
 
-| # | Exercise | Surface | Duration |
-|---|----------|---------|----------|
-| GS | [Getting Started](exercises/ex0/README.md) | Prepare your laptop, connect Claude Code to your workspace via MCP, log in to SAP LeanIX, and orient yourself | Setup | 15 min |
-| 1 | [Create the Review Standard from Claude Code (via MCP)](exercises/ex1/README.md) | Use Claude Code (already connected) to explore MaMa-CRM and create the review-standard ADR | Claude Code → LeanIX | 20 min |
-| 2 | [Explore MaMa-CRM with the EA Assistant](exercises/ex2/README.md) | Use the EA Assistant to map the application and its landscape | LeanIX UI | 25 min |
-| 3 | [Review MaMa-CRM Against the Standard](exercises/ex3/README.md) | Produce an evidence table and gap register against the Top 20 Criteria | LeanIX UI | 25 min |
-| 4 | [Enrich with Web Research and Check EU AI Act Exposure](exercises/ex4/README.md) | Research alternatives and classify regulatory exposure | LeanIX UI | 20 min |
-| 5 | [Deliver the Verdict](exercises/ex5/README.md) | Synthesize a keep / re-platform / retire recommendation and share back | LeanIX UI | 15 min |
-
-**Total exercise time: ~115 minutes**
+| # | Exercise | Description | User Interface |
+|---|----------|-------------|----------------|
+| GS | [Getting Started](exercises/ex0/README.md) | Prepare your laptop, connect Claude Code to your workspace via MCP, log in to SAP LeanIX, and orient yourself | Setup |
+| 1 | [Create the Review Standard from Claude Code (via MCP)](exercises/ex1/README.md) | Use Claude Code (already connected) to explore MaMa-CRM and create the review-standard ADR | Claude Code → LeanIX |
+| 2 | [Explore MaMa-CRM with the EA Assistant](exercises/ex2/README.md) | Use the EA Assistant to map the application and its landscape | LeanIX UI |
+| 3 | [Review MaMa-CRM Against the Standard](exercises/ex3/README.md) | Produce an evidence table and gap register against the Top 20 Criteria | LeanIX UI |
+| 4 | [Enrich with Web Research and Check EU AI Act Exposure](exercises/ex4/README.md) | Research alternatives and classify regulatory exposure | LeanIX UI |
+| 5 | [Deliver the Verdict](exercises/ex5/README.md) | Synthesize a keep / re-platform / retire recommendation and share back | LeanIX UI |
 
 ## Requirements
 
