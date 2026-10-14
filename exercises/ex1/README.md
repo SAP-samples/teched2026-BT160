@@ -14,27 +14,30 @@ InDAC's architecture group recently published the **Application Review — Top 2
 
 You *could* create that ADR by clicking through the LeanIX UI. Instead, you'll do it from **Claude Code**, talking to LeanIX over the **Model Context Protocol (MCP)**.
 
+> [!NOTE]
 > **What is MCP?** The Model Context Protocol is an open standard that lets an AI assistant call external tools and systems in a structured way. The **LeanIX MCP server** exposes your workspace — fact sheets, architecture decisions, inventory search — as tools that an assistant like Claude Code can call directly. In practice: you describe what you want in plain language, and the assistant performs real operations in your LeanIX workspace.
 
-> **Why start here?** It makes one thing concrete up front — LeanIX is not a walled garden. The architecture data you'll work with in the UI for the rest of the session is the *same* data a developer can reach from their own toolchain. Create once, govern everywhere.
+> [!NOTE]
+> **Why start here?** It makes one thing concrete up front: LeanIX is not a walled garden. The architecture data you'll work with in the UI for the rest of the session is the *same* data a developer can reach from their own toolchain. Create once, govern everywhere.
 
 ## Step 1 — Explore MaMa-CRM via MCP
 
 Claude Code is already connected to your workspace from Getting Started. Start by using it to explore the application you are about to review — this is both a useful orientation and a confirmation that the MCP connection works end-to-end.
 
-In the Claude Code chat in VS Code, ask:
+**➤ In the Claude Code chat in VS Code, ask:**
 
 > *"Using the LeanIX MCP server, look up the MaMa-CRM application fact sheet and show me all its relations — the IT components, business capabilities, interfaces, and any other fact sheets it is connected to. For each relation include the name and lifecycle phase where available."*
 
 Claude Code will call the MCP server and return what it finds in your workspace. Read the output — you will recognize this application and its dependency landscape again when the EA Assistant describes it from Exercise 2 onward.
 
-> **What just happened:** Claude Code called real tools in your live LeanIX workspace — not a demo environment, not mocked data. You are reading actual inventory records. If Claude Code reports that MaMa-CRM does not exist or returns an authentication error, re-check the MCP connection from Getting Started.
+> [!NOTE]
+> Claude Code called real tools in your live LeanIX workspace — not a demo environment, not mocked data. You are reading actual inventory records. If Claude Code reports that MaMa-CRM does not exist or returns an authentication error, re-check the MCP connection from Getting Started.
 
 ## Step 2 — Create the Review-Standard ADR
 
 Now create the Architecture Decision that captures InDAC's review standard.
 
-Paste this prompt into Claude Code:
+**➤ Paste this into Claude Code:**
 
 > *"Using the LeanIX MCP server, create an architecture decision titled 'Application Review — Top 20 Criteria Standard'. Set its status to Accepted. Populate it as follows:*
 > - *Context: InDAC's architecture group has published a Top 20 Criteria standard — the universally applicable, immediately verifiable criteria used for portfolio rationalisation, M&A due diligence, and governance escalations. Every application review must now be assessed against this standard.*
@@ -53,6 +56,7 @@ Claude Code will call `create_architecture_decision` and report back the new ADR
 4. Confirm the **Context**, **Decision**, and **Consequences** sections match what you created — and that the status is **Accepted**.
 5. If **Approved by** is empty, click **Edit** and add your LeanIX user ID.
 
+> [!IMPORTANT]
 > **This is the handoff.** You created this record from Claude Code, and it is now a first-class object in the LeanIX workspace — visible in the UI, ready to be linked to fact sheets, and readable by the EA Assistant. From here on, you work inside LeanIX.
 
 ## Summary

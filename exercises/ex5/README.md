@@ -8,7 +8,7 @@ You have the evidence, the gaps, an outside view of the technology, and a regula
 
 ## Step 1 — Draft the Board Verdict
 
-In the EA Assistant, ask:
+**➤ Ask the EA Assistant:**
 
 > *"Write a Board-ready verdict on MaMa-CRM, one page maximum. Structure it as:*
 > *1. **Recommendation** — keep, re-platform, or retire — stated in the first sentence.*
@@ -17,11 +17,14 @@ In the EA Assistant, ask:
 > *4. **Next steps** — the first three actions, each with an owner role and whether an initiative already exists in LeanIX.*
 > *Keep every claim traceable to evidence we gathered. Do not introduce new facts."*
 
+> [!TIP]
 > **Why one page:** A Board decides on the summary, not the appendix. Your evidence table from Exercise 3 is the appendix; this is the page they read.
 
 ## Step 2 — Pressure-Test the Verdict
 
-Before you present it, challenge your own recommendation once:
+Before you present it, challenge your own recommendation once.
+
+**➤ Ask the EA Assistant:**
 
 > *"Argue the opposite of your recommendation in three sentences. What is the strongest case against it, and what single piece of evidence would most change the decision if it turned out to be wrong?"*
 
@@ -58,6 +61,7 @@ This uses the diagram-generation capability of the LeanIX MCP server. The result
 
 You have taken MaMa-CRM from an unreviewed, unloved system to a Board-ready verdict — created a governed review standard from your terminal, explored the application with the EA Assistant, reviewed it against the standard with full evidence, enriched it with web research and a regulatory check, and delivered a defensible recommendation. That is the full arc of an evidence-based application review in SAP LeanIX.
 
+> [!NOTE]
 > **Coming soon:** SAP LeanIX Reports will let you publish structured, multi-section review outputs directly from the EA Assistant into a shareable report format — no copy-paste required. Keep an eye on the LeanIX release notes for this feature.
 
 ## Going Further

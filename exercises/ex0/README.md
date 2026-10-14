@@ -12,8 +12,8 @@ Before the exercises begin, prepare your laptop, open Claude Code, connect it to
 
 Two capabilities drive this workshop:
 
-- The **EA Assistant** is a conversational AI inside SAP LeanIX. It reads fact sheets, traverses relationships, reasons over indexed documents, and performs live web research — all in natural language.
-- The **MCP server** exposes your LeanIX workspace as tools that AI clients can call directly from your own tooling. When you create an architecture decision in Exercise 1 via Claude Code, the EA Assistant in Exercises 2–5 can immediately read and reason over it — the same data, two surfaces.
+- The **EA Assistant** is the conversational AI built into SAP LeanIX — no setup required, it is already there when you log in. It reads fact sheets, traverses relationships, reasons over documents you index in the workspace, and performs live web research, all in natural language. It is designed for architects and business users working inside LeanIX.
+- The **MCP server** exposes your LeanIX workspace as tools that any AI client can call from your own tooling. When you create an architecture decision in Exercise 1 via Claude Code, the EA Assistant in Exercises 2–5 can immediately read and reason over it — the same data, two surfaces, the same MCP server underneath both.
 
 ## Systems You Will Use
 
@@ -24,7 +24,10 @@ Two capabilities drive this workshop:
 
 ## Step 1 — Prepare Your Laptop
 
-Your session laptop needs a one-time setup so Claude Code can reach the internet through the venue's **hyperspace proxy**. **Do this before you open Claude Code or VS Code.**
+> [!NOTE]
+> This step is specific to this TechEd session. The LMU script routes Claude Code through the venue's Hyperspace proxy. After the session, you can connect Claude Code to your own LeanIX workspace with any MCP-compatible LLM using your own API key — no proxy script needed.
+
+Your session laptop needs a one-time setup so Claude Code can reach the LLM through the venue's **Hyperspace proxy**. **Do this before you open Claude Code or VS Code.**
 
 1. Press the **Windows / Start** key.
 2. Type **`bt160`**.
@@ -32,7 +35,8 @@ Your session laptop needs a one-time setup so Claude Code can reach the internet
 
 ![Searching for bt160 in the Start menu and running LMU_BT160](images/ex0_lmu_bt160.png)
 
-> **Why this matters:** Without the proxy setup, Claude Code cannot authenticate or reach the LeanIX MCP server. If `LMU_BT160` does not appear or the setup fails, raise your hand before continuing.
+> [!WARNING]
+> If `LMU_BT160` does not appear or the setup fails, raise your hand before continuing.
 
 ## Step 2 — Open Claude Code and Connect to LeanIX
 
@@ -40,13 +44,14 @@ Exercises 1 and 2 use Claude Code to talk to your LeanIX workspace through the M
 
 **You can use Claude Code in whichever way you prefer:**
 - **VS Code extension** (recommended for most participants): Visual Studio Code is pre-installed on your session laptop with the Claude Code extension. Authentication uses a browser OAuth flow.
-- **Terminal / CLI**: If you prefer working in the terminal, Claude Code is also available as a command-line tool. 
+- **Terminal / CLI**: If you prefer working in the terminal, Claude Code is also available as a command-line tool.
 
 Both give identical workspace access. Choose whichever feels more natural to you.
 
-> **We will walk through the MCP server setup steps live at the start of the session.** The instructions below are your reference — follow along as the facilitator demonstrates.
+> [!NOTE]
+> The facilitator will walk through the MCP server setup live at the start of the session. The instructions below are your reference — follow along as they demonstrate.
 
-### VS Code Extension 
+### Option A — VS Code Extension
 
 #### Open Claude Code in VS Code
 
@@ -75,8 +80,17 @@ Both give identical workspace access. Choose whichever feels more natural to you
 
 ![Screenshot: LeanIX MCP server showing Connected status in Claude Code](images/ex0_mcp_connected.png)
 
+### Option B — Terminal / CLI
 
-### Verify the connection works
+If you prefer the terminal, add the MCP server with a single command. Replace `<url>` with the LeanIX MCP server URL from your session card:
+
+```bash
+claude mcp add --transport http leanix https://<workspace-subdomain>.leanix.net/services/mcp-server/v1/mcp
+```
+
+Claude Code will open a browser window for OAuth login. Sign in to your LeanIX workspace and return to the terminal.
+
+### ✅ Verify the connection works
 
 In the Claude Code chat, ask:
 
@@ -101,7 +115,8 @@ Spend two minutes finding the four places you will work today:
   - `Application Review — Top 20 Criteria.pdf` — the standard you will review MaMa-CRM against
   - `mama-crm-arc42.pdf` — the architecture documentation for MaMa-CRM
 
-> **Why this matters:** The EA Assistant can only reason over documents that have been indexed. Both documents above were indexed before the session, so the EA Assistant can already cite them — you do not need to upload anything.
+> [!NOTE]
+> The EA Assistant can only reason over documents that have been indexed. Both documents above were indexed before the session, so the EA Assistant can already cite them — you do not need to upload anything.
 
 ## Step 5 — Take a First Look at MaMa-CRM
 
@@ -109,7 +124,8 @@ Spend two minutes finding the four places you will work today:
 2. Filter by **Application** type and open the **MaMa-CRM** fact sheet.
 3. Skim it — lifecycle, business criticality, ownership, relations. Don't analyze it yet; just get a feel for what the Board is asking you to pass judgment on.
 
-> **Do not change anything yet.** Exercise 1 starts with Claude Code already connected.
+> [!CAUTION]
+> Do not change anything yet. Exercise 1 starts with Claude Code already connected.
 
 ## Summary
 

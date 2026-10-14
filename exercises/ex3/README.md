@@ -22,6 +22,7 @@ Your sources are:
 | 2 | The **MaMa-CRM inventory data** | The fact sheet and its related fact sheets (what you explored in Exercise 2) |
 | 3 | The **arc42 architecture documentation** | The indexed `mama-crm-arc42.pdf` in Workspace Files |
 
+> [!NOTE]
 > **Why two sources for the criteria?** You created the standard as a governed ADR in Exercise 1, and the full criteria PDF is also indexed. The EA Assistant can use either — the point is that the standard is *in the workspace*, not on someone's laptop, so the review is reproducible.
 
 The documents indexed in this workspace were prepared by the session team — but the same setup works with your own content. To use the EA Assistant for reviews in your own organization, upload your company's review guidelines, architectural standards, or governance policies to **Administration → AI Assistants → Workspace Files**. Once indexed, the EA Assistant can reason over them exactly the way it reasons over the arc42 doc here.
@@ -38,13 +39,15 @@ Before running the assessment, open the admin section to see the two documents t
    - `mama-crm-arc42.pdf`
 5. Download and briefly review each — especially the Top 20 Criteria list and the arc42 architecture documentation summary. You do not need to read them in full; skim enough to know what the EA Assistant will be drawing from.
 
-> **Taking them home:** Both documents are also in the [`sampleDocuments/`](../../sampleDocuments/) folder of this repository. You can download them directly from there and upload them to your own LeanIX workspace after the session to run the same review pattern against your own applications.
+> [!TIP]
+> Both documents are also in the [`sampleDocuments/`](../../sampleDocuments/) folder of this repository. You can download them directly from there and upload them to your own LeanIX workspace after the session to run the same review pattern against your own applications.
 
-> **Why this step:** When the EA Assistant cites "criterion 12" or "arc42 section 5.2", you want to be able to verify that citation against the actual document. Knowing what the source says makes you a much better reviewer of the EA Assistant's output.
+> [!NOTE]
+> When the EA Assistant cites "criterion 12" or "arc42 section 5.2", you want to be able to verify that citation against the actual document. Knowing what the source says makes you a much better reviewer of the EA Assistant's output.
 
 ## Step 2 — Run the Assessment
 
-Open (or stay in) the EA Assistant. Paste the following prompt. It is deliberately detailed — a Board review is one place where precision beats brevity.
+**➤ Open (or stay in) the EA Assistant. Paste the following prompt:**
 
 > **Assessment: MaMa-CRM against the Top 20 Criteria**
 >
@@ -71,24 +74,32 @@ The EA Assistant will produce a long, structured answer. Don't take it at face v
 
 Use follow-up prompts to challenge it, for example:
 
+**➤ Ask the EA Assistant:**
+
 > *"For criterion 4 (Technology Currency) you assigned a Pass. Show me the exact arc42 section and the LeanIX IT-component lifecycle values you based that on. If the component lifecycle is empty in LeanIX, downgrade the result."*
 
 ## Step 4 — Tie It to the Three-Way Decision
 
-The Board does not want a scorecard — it wants a direction. Ask:
+The Board does not want a scorecard — it wants a direction.
+
+**➤ Ask the EA Assistant:**
 
 > *"Given this assessment, which Top 20 Criteria are the gate criteria that would block continued investment in MaMa-CRM as-is? Group the gaps into three buckets: those that argue for KEEP (fixable with data/governance work), those that argue for RE-PLATFORM (architecture or technology problems), and those that argue for RETIRE (the application should not continue). Be explicit about which bucket is heaviest."*
 
+> [!NOTE]
 > **Why this matters — and why it shows off the Assistant:** This is where customization pays off. The EA Assistant is not giving you a generic CRM opinion — it is reasoning over *your* indexed arc42 document and *your* workspace's criteria to produce a recommendation specific to MaMa-CRM. Change the documents and the verdict changes with them.
 
 ## Step 5 — Link MaMa-CRM to the Review Standard
 
-The review is on the record. Now formalize the connection between the fact sheet and the standard it was reviewed against. Ask the EA Assistant:
+The review is on the record. Now formalize the connection between the fact sheet and the standard it was reviewed against.
+
+**➤ Ask the EA Assistant:**
 
 > *"Link the MaMa-CRM application fact sheet to the 'Application Review — Top 20 Criteria Standard' architecture decision."*
 
 Once confirmed, open the MaMa-CRM fact sheet in the LeanIX UI and verify that the ADR appears under its **Architecture Decisions** relations.
 
+> [!NOTE]
 > **Why this matters:** A review that exists only in a chat session is ephemeral. Linking the fact sheet to the ADR turns the outcome into a governed artifact: anyone opening MaMa-CRM or the ADR can see that this review took place and which standard it was conducted against. The relationship is visible in the inventory, searchable, and auditable — this is what "govern everywhere" looks like in practice.
 
 ## Summary
