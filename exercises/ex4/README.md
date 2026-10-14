@@ -1,4 +1,4 @@
-# Exercise 4 — Enrich with Web Research and Check EU AI Act Exposure
+# Exercise 4 — Enrich with Web Research
 
 ## Overview
 

@@ -2,7 +2,7 @@
 
 ## Overview
 
-You have the evidence, the gaps, an outside view of the technology, and a regulatory determination. Now you turn it into the one thing the Board actually asked for: a defensible **keep / re-platform / retire** recommendation for MaMa-CRM — and you prepare to share it back to the room.
+You have the evidence, the gaps, and an outside view of the technology. Now you turn it into the one thing the Board actually asked for: a defensible **keep / re-platform / retire** recommendation for MaMa-CRM — and you prepare to share it back to the room.
 
 **Duration:** 15 minutes
 
@@ -63,7 +63,7 @@ Keep the EA Assistant conversation and the MaMa-CRM fact sheet open to show the 
 At the end of the session, be ready to tell the room:
 
 - **What did you find?** Your recommendation and the two or three findings behind it.
-- **Which path did you take?** Where the inventory, the arc42 doc, web research, and the EU AI Act check each changed your thinking.
+- **Which path did you take?** Where the inventory, the arc42 doc, and web research each changed your thinking.
 - **What surprised you?** The conflict, the empty field, or the external fact you did not expect.
 
 > There is no single correct verdict. A well-evidenced "re-platform" and a well-evidenced "keep with conditions" can both be right — what matters is that the recommendation is traceable to evidence, and that you are honest about the gaps.
@@ -79,7 +79,7 @@ This uses the diagram-generation capability of the LeanIX MCP server. The result
 
 ## Summary
 
-You have taken MaMa-CRM from an unreviewed, unloved system to a Board-ready verdict — created a governed review standard from your terminal, explored the application with the EA Assistant, reviewed it against the standard with full evidence, enriched it with web research and a regulatory check, and delivered a defensible recommendation. That is the full arc of an evidence-based application review in SAP LeanIX.
+You have taken MaMa-CRM from an unreviewed, unloved system to a Board-ready verdict — created a governed review standard from your terminal, explored the application with the EA Assistant, reviewed it against the standard with full evidence, enriched it with web research, and delivered a defensible recommendation. That is the full arc of an evidence-based application review in SAP LeanIX.
 
 > [!NOTE]
 > **Coming soon:** SAP LeanIX Reports will let you publish structured, multi-section review outputs directly from the EA Assistant into a shareable report format — no copy-paste required. Keep an eye on the LeanIX release notes for this feature.

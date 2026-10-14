@@ -44,7 +44,7 @@ Last quarter, **you** — John, senior enterprise architect at InDAC — present
 - How to connect **Claude Code** to a LeanIX workspace through the **MCP server**, and create a governed Architecture Decision Record from your terminal
 - How to use the **EA Assistant** to explore an application and its landscape in natural language — lifecycle, ownership, dependencies, and business-capability coverage
 - How to run an **evidence-based application review** in which the EA Assistant reasons over indexed architecture documentation and a workspace review standard
-- How to **enrich** your analysis with live web research and check an application for **EU AI Act** exposure
+- How to **enrich** your analysis with live web research — assess technology currency, scope credible successors, and lock the chosen replacement into the inventory
 - How to synthesize everything into a **keep / re-platform / retire** recommendation ready for a Board shareback
 
 ## Session Structure
@@ -55,7 +55,7 @@ Last quarter, **you** — John, senior enterprise architect at InDAC — present
 | 1 | [Create the Review Standard from Claude Code (via MCP)](exercises/ex1/README.md) | Use Claude Code (already connected) to explore MaMa-CRM and create the review-standard ADR | Claude Code → LeanIX |
 | 2 | [Explore MaMa-CRM with the EA Assistant](exercises/ex2/README.md) | Use the EA Assistant to map the application and its landscape | LeanIX UI |
 | 3 | [Review MaMa-CRM Against the Standard](exercises/ex3/README.md) | Produce an evidence table and gap register against the Top 20 Criteria | LeanIX UI |
-| 4 | [Enrich with Web Research and Check EU AI Act Exposure](exercises/ex4/README.md) | Research alternatives and classify regulatory exposure | LeanIX UI |
+| 4 | [Enrich with Web Research](exercises/ex4/README.md) | Research alternatives and lock in a credible successor | LeanIX UI |
 | 5 | [Deliver the Verdict](exercises/ex5/README.md) | Synthesize a keep / re-platform / retire recommendation and share back | LeanIX UI |
 
 ## Requirements
@@ -78,7 +78,7 @@ Last quarter, **you** — John, senior enterprise architect at InDAC — present
 - [Exercise 1 - Create the Review Standard from Claude Code (via MCP)](exercises/ex1/README.md)
 - [Exercise 2 - Explore MaMa-CRM with the EA Assistant](exercises/ex2/README.md)
 - [Exercise 3 - Review MaMa-CRM Against the Standard](exercises/ex3/README.md)
-- [Exercise 4 - Enrich with Web Research and Check EU AI Act Exposure](exercises/ex4/README.md)
+- [Exercise 4 - Enrich with Web Research](exercises/ex4/README.md)
 - [Exercise 5 - Deliver the Verdict](exercises/ex5/README.md)
 
 ## Related Sessions
@@ -97,7 +97,6 @@ This workshop sits in the **Accelerate and Derisk Your AI-Native Transformation*
 - [SAP LeanIX — Connecting to the MCP Server](https://help.sap.com/docs/leanix/ea/connecting-to-mcp-server)
 - [SAP LeanIX — Setting up the EA Assistant](https://help.sap.com/docs/leanix/ea/setting-up-enterprise-architecture-assistant)
 - [SAP LeanIX AI Plugins and Agent Skills](https://github.com/SAP/leanix-ai-plugins)
-- [EU AI Act — Official Text](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689)
 - [Sample Documents](sampleDocuments/) — the arc42 architecture documentation and Top 20 Criteria PDF used in this workshop; download and upload to your own workspace to run the same review pattern against your own applications
 
 ## How to obtain support

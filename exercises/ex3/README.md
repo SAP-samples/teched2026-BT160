@@ -104,6 +104,6 @@ Once confirmed, open the MaMa-CRM fact sheet in the LeanIX UI and verify that th
 
 ## Summary
 
-You have a defensible, criterion-by-criterion review of MaMa-CRM: an evidence table, a confidence-scored summary, a ranked gap register, and a first read on which way the keep / re-platform / retire decision leans. In Exercise 4, you will strengthen the weakest parts of this picture with live web research and a regulatory check before you finalize the verdict.
+You have a defensible, criterion-by-criterion review of MaMa-CRM: an evidence table, a confidence-scored summary, a ranked gap register, and a first read on which way the keep / re-platform / retire decision leans. In Exercise 4, you will strengthen the weakest parts of this picture with live web research before you finalize the verdict.
 
-[Back: Exercise 2](../ex2/README.md) | [Next: Exercise 4 — Enrich with Web Research and Check EU AI Act Exposure](../ex4/README.md)
+[Back: Exercise 2](../ex2/README.md) | [Next: Exercise 4 — Enrich with Web Research](../ex4/README.md)
