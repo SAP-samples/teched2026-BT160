@@ -39,25 +39,34 @@ Now create the Architecture Decision that captures InDAC's review standard.
 
 ⌨️ **➤ Paste this into Claude Code:**
 
-> *"Using the LeanIX MCP server, create an architecture decision titled 'Application Review — Top 20 Criteria Standard'. Set its status to Accepted. Populate it as follows:*
+> *"Using the LeanIX MCP server, create an architecture decision titled 'Application Review — Top 20 Criteria Standard'. Set its status to Proposed. Populate it as follows:*
 > - *Context: InDAC's architecture group has published a Top 20 Criteria standard — the universally applicable, immediately verifiable criteria used for portfolio rationalisation, M&A due diligence, and governance escalations. Every application review must now be assessed against this standard.*
 > - *Decision: All application reviews at InDAC are evaluated against the Top 20 Criteria. Each criterion is assessed as Pass or Gap, with evidence. A review informs a keep / re-platform / retire recommendation.*
 > - *Consequences: Reviews become comparable across the portfolio and traceable to an approved standard. Applications with unaddressed Gaps on gate criteria cannot be recommended for continued investment without a remediation plan.*
-> *Set me as the approver, and set Last Reviewed to today. Then return the ADR's ID and URL."*
+> *Set Last Reviewed to today. Then return the ADR's ID and URL."*
+
+> [!TIP]
+> **Pause and look at this prompt.** Before you run it — what do you notice about how it is structured? It names the tool, specifies exact field values, uses labelled sections (Context / Decision / Consequences), and ends with a concrete output request. As an AI-native EA, writing precise, well-structured prompts will become as important as any other professional skill. The prompts throughout this workshop are examples: feel free to study and adapt them.
 
 Claude Code will call `create_architecture_decision` and report back the new ADR's ID and URL.
 
+> [!NOTE]
+> **Governance reflection:** The ADR just landed as **Proposed** — not Accepted. The AI could have set it to Accepted in the same call, but that would silently skip your organization's approval step. In the next step, you close the loop: you review the content and accept it yourself. That separation — AI proposes, human approves — is what keeps AI in the workflow without letting it own governance decisions.
 
-## Step 3 — Confirm It Landed in LeanIX
+
+## Step 3 — Review and Accept in LeanIX
 
 1. Open LeanIX in your browser (the tab from Getting Started).
 2. Navigate to **Architecture Decisions**.
 3. Search for the decision title and open your ADR.
-4. Confirm the **Context**, **Decision**, and **Consequences** sections match what you created — and that the status is **Accepted**.
-5. If **Approved by** is empty, click **Edit** and add your LeanIX user ID.
+4. Confirm the **Context**, **Decision**, and **Consequences** sections match what you created — and that the status shows **Proposed**.
+5. Click **Edit**.
+6. Change the status to **Accepted**.
+7. Add yourself to the **Approved by** field.
+8. Save.
 
 > [!IMPORTANT]
-> **This is the handoff.** You created this record from Claude Code, and it is now a first-class object in the LeanIX workspace — visible in the UI, ready to be linked to fact sheets, and readable by the EA Assistant. From here on, you work inside LeanIX.
+> **This is the governance step.** The AI drafted and proposed the decision; you just reviewed and accepted it. The ADR is now a first-class object in the LeanIX workspace — visible in the UI, ready to be linked to fact sheets, and readable by the EA Assistant. From here on, you work inside LeanIX.
 
 ## Summary
 

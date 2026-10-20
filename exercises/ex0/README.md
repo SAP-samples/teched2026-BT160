@@ -2,7 +2,7 @@
 
 ## Overview
 
-Before the exercises begin, prepare your laptop, open Claude Code, connect it to your SAP LeanIX workspace through the MCP server, log in to the workspace, and orient yourself. Everything you need for the review of MaMa-CRM is already waiting.
+Welcome to BT160! Complete the steps below **in order** — each one builds on the last. By the end, your laptop is set up, Claude Code is connected to your LeanIX workspace, and you are ready to start the review. Don't jump ahead; the connection you establish in Step 2 is what every exercise depends on.
 
 **Duration:** 15 minutes
 

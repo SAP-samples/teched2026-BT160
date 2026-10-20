@@ -1,2 +1,4 @@
-.playwright-mcp/console-2026-10-12T15-20-00-325Z.log
-.playwright-mcp/page-2026-10-12T15-20-06-019Z.yml
+.playwright-mcp/
+.playwright-mcp/
+tmp_pdf_build/
+BT160-Workshop-Exercises.pdf

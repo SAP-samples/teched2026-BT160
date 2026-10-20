@@ -64,7 +64,7 @@ At the end of the session, be ready to tell the room:
 
 - **What did you find?** Your recommendation and the two or three findings behind it.
 - **Which path did you take?** Where the inventory, the arc42 doc, and web research each changed your thinking.
-- **What surprised you?** The conflict, the empty field, or the external fact you did not expect.
+- **Where was the AI wrong, too generous, or unverifiable?** What would you have caught only by knowing the domain?
 
 > There is no single correct verdict. A well-evidenced "re-platform" and a well-evidenced "keep with conditions" can both be right — what matters is that the recommendation is traceable to evidence, and that you are honest about the gaps.
 
