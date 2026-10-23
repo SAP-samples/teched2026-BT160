@@ -60,7 +60,7 @@ Last quarter, **you** — John, senior enterprise architect at InDAC — present
 
 ## Requirements
 
-- Access to **your own SAP LeanIX** workspace (URL, credentials, and MCP token provided on your session card) — each participant gets a dedicated workspace in which they are the admin
+- Access to **your own SAP LeanIX** workspace (URL and credentials provided during the session) — each participant gets a dedicated workspace in which they are the admin
 - **Claude Code** — pre-installed on your session laptop (used briefly in Exercise 1)
 - A modern web browser (Chrome or Edge recommended)
 - No prior experience with SAP LeanIX, the EA Assistant, or MCP required
@@ -69,8 +69,8 @@ Last quarter, **you** — John, senior enterprise architect at InDAC — present
 
 | System | URL | Credentials |
 |--------|-----|-------------|
-| SAP LeanIX | *(your workspace URL — on session card)* | *(on session card)* |
-| LeanIX MCP server | *(your workspace MCP endpoint — on session card)* | Browser OAuth login (set up in Getting Started) |
+| SAP LeanIX | `https://de-8.leanix.net/BT160HandsOn<XX>/inventory` (replace `<XX>` with your participant number) | Provided during session |
+| LeanIX MCP server | `https://mcp.leanix.net/services/mcp-server/v1/mcp/instance/de-8/workspace/BT160HandsOn<XX>` | Browser OAuth login (set up in Getting Started) |
 
 ## Exercises
 

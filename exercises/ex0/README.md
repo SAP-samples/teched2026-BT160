@@ -62,33 +62,56 @@ Both give identical workspace access. Choose whichever feels more natural to you
 
 #### Connect to the LeanIX MCP Server
 
-1. In the Claude Code panel, open the **MCP Servers** section (plug icon, or via the settings gear → MCP Servers).
-2. Click **Add MCP Server**.
+1. In the Claude Code chat input, type `/mcp` and select **MCP servers** under **Customize**.
 
-![Screenshot: MCP Servers section in Claude Code with the Add MCP Server button](images/ex0_mcp_add_server.png)
+![Typing /mcp in Claude Code shows Customize > MCP servers in the autocomplete](images/ex0_mcp_slash_command.png)
 
-3. Enter the LeanIX MCP server URL from your session card:
-   ```
-   https://<workspace-subdomain>.leanix.net/services/mcp-server/v1/mcp
-   ```
-4. When asked for authentication, choose **OAuth / browser login**.
-5. A browser window opens — sign in to your LeanIX workspace.
+2. The **MCP servers** dialog opens. Click **Add server**.
 
-![Screenshot: LeanIX OAuth login in the browser](images/ex0_leanix_oauth.png)
+![MCP servers dialog showing no servers configured with an Add server button](images/ex0_mcp_servers_empty.png)
 
-6. Return to VS Code. The `leanix` server should show as **Connected**.
+3. Fill in the form:
+   - **Name**: `LeanIX`
+   - **Transport**: **HTTP (remote)** — "Connects to a server by URL"
+   - **URL** (replace `XX` with your participant number):
+     ```
+     https://mcp.leanix.net/services/mcp-server/v1/mcp/instance/de-8/workspace/BT160HandsOnXX
+     ```
+   - **Scope**: **User** (available in all your projects)
+4. Click **Add server**.
 
-![Screenshot: LeanIX MCP server showing Connected status in Claude Code](images/ex0_mcp_connected.png)
+![Add MCP server form filled with the LeanIX name, HTTP transport selected, and workspace URL entered](images/ex0_mcp_add_server.png)
+
+5. The server appears in the list with a **Needs Auth** badge. Click on **LeanIX** to open its detail view.
+
+![MCP servers list showing LeanIX with a Needs Auth badge](images/ex0_mcp_needs_auth.png)
+
+6. Click **Authenticate**.
+
+![LeanIX server detail view showing the Authenticate, Disable, and Remove buttons](images/ex0_mcp_authenticate.png)
+
+7. A browser window opens with the SAP LeanIX authorization page. Click **Consent**.
+
+![SAP LeanIX Authorize Application consent page in the browser](images/ex0_leanix_oauth.png)
+
+8. **Start a new chat** in Claude Code.
+
+> [!IMPORTANT]
+> The MCP server does not appear in the tool list until you open a fresh conversation. Start a new chat now — the server will not be available in the current one.
+
+9. In the new chat, type `/mcp` → **Customize** → **MCP servers**. The `leanix` server should now show as **Connected**.
+
+![MCP servers list showing leanix with a green Connected badge](images/ex0_mcp_connected.png)
 
 ### Option B — Terminal / CLI
 
-If you prefer the terminal, add the MCP server with a single command. Replace `<url>` with the LeanIX MCP server URL from your session card:
+If you prefer the terminal, add the MCP server with a single command. Replace `XX` with your participant number:
 
 ```bash
-claude mcp add --transport http leanix https://<workspace-subdomain>.leanix.net/services/mcp-server/v1/mcp
+claude mcp add --transport http leanix https://mcp.leanix.net/services/mcp-server/v1/mcp/instance/de-8/workspace/BT160HandsOnXX
 ```
 
-Claude Code will open a browser window for OAuth login. Sign in to your LeanIX workspace and return to the terminal.
+Claude Code will open a browser window for OAuth login. Sign in to your LeanIX workspace and return to the terminal. Then **start a new chat** so the session picks up the authenticated server.
 
 ### ✅ Verify the connection works
 
@@ -100,9 +123,14 @@ You should see at least one template. If you get an error, check the URL on your
 
 ## Step 3 — Log In to Your SAP LeanIX Workspace
 
-1. Open your browser and navigate to the **SAP LeanIX URL** on your session card. Each participant has their own workspace, so make sure you use *your* URL.
-2. Sign in with the credentials provided on your card.
+1. Open your browser and navigate to your LeanIX workspace. Replace `XX` with your participant number:
+   ```
+   https://de-8.leanix.net/BT160HandsOnXX/inventory
+   ```
+2. Sign in with the credentials provided during the session.
 3. You should land on the SAP LeanIX home screen.
+
+![SAP LeanIX sign-in screen](../../images/GettingStartedStep3.png)
 
 ## Step 4 — Orient Yourself in the Workspace
 
@@ -117,6 +145,12 @@ Spend two minutes finding the four places you will work today:
 
 > [!NOTE]
 > The EA Assistant can only reason over documents that have been indexed. Both documents above were indexed before the session, so the EA Assistant can already cite them — you do not need to upload anything.
+
+To find **Architecture Decisions**, open the **More** menu in the top navigation bar:
+
+![LeanIX Inventory with the More menu open, showing Architecture Decisions](../../images/GetStartedStep4.png)
+
+![More menu close-up with Architecture Decisions highlighted](../../images/GettingStartedStep4.1.png)
 
 ## Step 5 — Take a First Look at MaMa-CRM
 
