@@ -138,13 +138,17 @@ Spend two minutes finding the four places you will work today:
 
 - **Inventory** — the catalogue of all applications, IT components, and other fact sheets in the landscape. This is where the **MaMa-CRM** application fact sheet lives.
 - **Architecture Decisions** — where governance decisions (ADRs) are recorded. You will create one here in Exercise 1 and reference it throughout.
-- **EA Assistant** — the conversational AI in SAP LeanIX, reached via **More** (top header) → **EA Assistant**. It is available throughout the session and does most of the analytical work from Exercise 2 onward.
+- **EA Assistant** — the conversational AI in SAP LeanIX, reached via the **star icon** in the header toolbar, next to the **Full View** switcher. It is available throughout the session and does most of the analytical work from Exercise 2 onward.
 - **Workspace Files (AI Assistants)** — admin area where documents are uploaded so the EA Assistant can reason over them. For this workshop, two documents are already uploaded and indexed in your workspace:
   - `Application Review — Top 20 Criteria.pdf` — the standard you will review MaMa-CRM against
   - `mama-crm-arc42.pdf` — the architecture documentation for MaMa-CRM
 
 > [!NOTE]
 > The EA Assistant can only reason over documents that have been indexed. Both documents above were indexed before the session, so the EA Assistant can already cite them — you do not need to upload anything.
+
+To find the **EA Assistant**, click the star icon in the header toolbar, next to the **Full View** switcher:
+
+![EA Assistant star icon in the LeanIX header toolbar](../../images/EAAssistantHeaderIcon.png)
 
 To find **Architecture Decisions**, open the **More** menu in the top navigation bar:
 
