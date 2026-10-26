@@ -16,7 +16,7 @@ An application review stands or falls on evidence. The EA Assistant reads the Ma
 
 ## Step 1 — Open the EA Assistant and Review the ADR
 
-1. In SAP LeanIX, navigate to **More** (top header) → **EA Assistant**.
+1. In SAP LeanIX, click the **star icon** in the header toolbar (next to the **Full View** switcher) to open the EA Assistant.
 2. A conversational panel opens. Start by pulling up the architecture decision you created from Claude Code:
 
 ⌨️ **➤ Ask the EA Assistant:**
